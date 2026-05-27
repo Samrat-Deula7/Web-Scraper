@@ -12,12 +12,14 @@ filteredSiteURLName = ""
 webURLName = ""
 HrefArr = []
 FilteredHref = []
+ScoreBoard = []
 count = 0
 siteCount = 0
 slashIndex = 0
 dotIndex = 0
-SimilarityPercent = 0
 
+best_href = None
+best_score = -1
 
 results = DDGS().text(
     query=search_query,
@@ -66,14 +68,9 @@ print(FilteredHref)
 for i , c in enumerate(WEBURL):
     if c == "/":
         count +=1
-        if count < 3:
-            SimilarityPercent = 100
         if count == 3:
             slashIndex = i+1
-            SimilarityPercent = 90
-        if count > 3:
-            SimilarityPercent = 60
-        
+            break
 
 
 
@@ -105,14 +102,24 @@ if (filteredSiteURLName == "https://"):
     for href in FilteredHref:
         clean_href = href.lower().replace("-", "").replace(" ", "")
         score=fuzz.partial_ratio(siteURLName.lower(),clean_href.lower())
-        if score > SimilarityPercent:
-            webURLName = href
+        ScoreBoard.append(score)
+
+        if score > best_score:
+            best_score = score
+            best_href = href
+
+        webURLName = best_href
 else:
     for href in FilteredHref:
         clean_href = href.lower().replace("-", "").replace(" ", "")
         score=fuzz.partial_ratio(filteredSiteURLName.lower(),clean_href.lower())
-        if score > SimilarityPercent:
-            webURLName = href
+        ScoreBoard.append(score)
+
+        if score > best_score:
+            best_score = score
+            best_href = href
+
+        webURLName = best_href
 
 print("\n")
 print("WEBSITE URL ********************")
