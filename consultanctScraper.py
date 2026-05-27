@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 from rapidfuzz import fuzz
 
 
-search_query = "Brilliant Education And Career Services Pvt. Ltd."
+search_query = "American Educational Research and Training Center"
 WEBURL = ""
 siteURLName = ""
 filteredSiteURLName = ""
@@ -16,6 +16,7 @@ count = 0
 siteCount = 0
 slashIndex = 0
 dotIndex = 0
+SimilarityPercent = 0
 
 
 results = DDGS().text(
@@ -50,7 +51,7 @@ for i in range(15):
         print("\n")
         print("This is the Facebook LINK ***************")
         print(HrefArr[i])
-        
+
 
 FilteredHref = [x for x in HrefArr if "facebook" not in x]
 
@@ -67,7 +68,11 @@ for i , c in enumerate(WEBURL):
         count +=1
         if count == 3:
             slashIndex = i+1
+            SimilarityPercent = 80
+        if count > 3:
+            SimilarityPercent = 50
             break
+
 
 
 siteURLName = "https://"+WEBURL[slashIndex:-1]
@@ -77,7 +82,7 @@ if "." in siteURLName:
         if s == ".":
             dotIndex = i
             break
-            
+
 filteredSiteURLName = "https://"+siteURLName[0:dotIndex]
 
 if "edu" in FilteredHref:
@@ -94,29 +99,17 @@ print("\n")
 print("FILTERED SITE NAME ********************")
 print(filteredSiteURLName)
 
-# if (filteredSiteURLName == ""):
-#     print("########## the filter is empty #######")
-#     for href in FilteredHref:
-#         clean_href = href.lower().replace("-", "").replace(" ", "")
-#         if siteURLName.lower() in clean_href:
-#             print("href matched 🥳🥳🥳")
-#             webURLName = href
-# else:
-#     for href in FilteredHref:
-#         if filteredSiteURLName in href:
-#             webURLName = href
-
 if (filteredSiteURLName == "https://"):
     for href in FilteredHref:
         clean_href = href.lower().replace("-", "").replace(" ", "")
         score=fuzz.partial_ratio(siteURLName.lower(),clean_href.lower())
-        if score > 80:
+        if score > SimilarityPercent:
             webURLName = href
 else:
     for href in FilteredHref:
         clean_href = href.lower().replace("-", "").replace(" ", "")
         score=fuzz.partial_ratio(filteredSiteURLName.lower(),clean_href.lower())
-        if score > 80:
+        if score > SimilarityPercent:
             webURLName = href
 
 print("\n")
@@ -130,7 +123,7 @@ soup = parseHTML(path)
 
 print("\n")
 print("WEBSITE IMAGE ********************")
-img = soup.find_all("img",alt=["logo"],rel="icon")
+img = soup.find_all("img",alt=["logo","Home"],rel="icon")
 
 
 if img:
