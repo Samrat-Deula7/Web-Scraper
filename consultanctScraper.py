@@ -1,11 +1,12 @@
 import pandas as pd
 from ddgs import DDGS
 import requests
+import re
 from bs4 import BeautifulSoup
 from rapidfuzz import fuzz
 
 
-search_query = "American Educational Research and Training Center"
+search_query = "THE RED EDUHOUSE PVT. LTD."
 WEBURL = ""
 siteURLName = ""
 filteredSiteURLName = ""
@@ -55,7 +56,7 @@ for i in range(8):
         print(HrefArr[i])
 
 
-FilteredHref = [x for x in HrefArr if not any(k in x for k in ["facebook", "linkedin", "youtube"])]
+FilteredHref = [x for x in HrefArr if not any(k in x for k in ["facebook", "linkedin", "youtube","school","maps","worldwide"])]
 
 print("\n")
 print("ORIGINAL LIST OF LINKS ********************")
@@ -121,30 +122,35 @@ else:
 
         webURLName = best_href
 
+
 print("\n")
 print("WEBSITE URL ********************")
 print(webURLName)
 
 
-fetchAndSaveToFile(webURLName,path)
+try:
+    fetchAndSaveToFile(webURLName,path)
 
-soup = parseHTML(path)
-
-print("\n")
-print("WEBSITE IMAGE ********************")
-img = soup.find_all("img",alt=["logo","Home"],rel="icon")
+    soup = parseHTML(path)
+    with open(path,"w",encoding="utf-8"):
+        pass
 
 
-if img:
+    print("\n")
+    print("WEBSITE IMAGE ********************")
+    img = soup.find_all("img", alt=re.compile(r"logo|home", re.I))
     print(img)
 
-else:
-    icon = soup.find_all("link",rel="icon")
-    print(icon)
+    if img == []:
+        icon = soup.find_all("link",rel="icon")
+        print(icon)
 
 
-description = soup.find_all("p")
+    description = soup.find_all("p")
 
-print("\n")
-print("WEBSITE DESCRIPTION ********************")
-print(description)
+    print("\n")
+    print("WEBSITE DESCRIPTION ********************")
+    print(description)
+
+except Exception as e:
+    print("Couldn't scrape Data",e)
