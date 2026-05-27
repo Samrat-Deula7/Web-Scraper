@@ -42,10 +42,10 @@ def parseHTML(path):
         return soup
 
 
-for i in range(15):
+for i in range(8):
     HrefArr.insert(i,results[i]["href"])
 
-for i in range(15):
+for i in range(8):
     if "facebook" in HrefArr[i]:
         WEBURL = HrefArr[i]
         print("\n")
@@ -53,7 +53,7 @@ for i in range(15):
         print(HrefArr[i])
 
 
-FilteredHref = [x for x in HrefArr if "facebook" not in x]
+FilteredHref = [x for x in HrefArr if not any(k in x for k in ["facebook", "linkedin", "youtube"])]
 
 print("\n")
 print("ORIGINAL LIST OF LINKS ********************")
@@ -66,12 +66,14 @@ print(FilteredHref)
 for i , c in enumerate(WEBURL):
     if c == "/":
         count +=1
+        if count < 3:
+            SimilarityPercent = 100
         if count == 3:
             slashIndex = i+1
-            SimilarityPercent = 80
+            SimilarityPercent = 90
         if count > 3:
-            SimilarityPercent = 50
-            break
+            SimilarityPercent = 60
+        
 
 
 
