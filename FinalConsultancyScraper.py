@@ -28,25 +28,30 @@ search_query =[
     "Guru The Pathfinderk"
 ]
 path = "data.html"
-WEBURL = ""
 siteURLName = ""
 filteredSiteURLName = ""
 webURLName = ""
 HrefArr = []
 FilteredHref = []
 ScoreBoard = []
-count = 0
+
 siteCount = 0
-slashIndex = 0
-dotIndex = 0
+
+
 
 best_href = None
 best_score = -1
 
 def genWebUrlLinkANDFilteredSiteURL(results):
+    count = 0
+    dotIndex = 0
+    slashIndex = 0
+    best_href = None
+    best_score = -1
+    FBURL = ""
 
     for i in range(8):
-    HrefArr.insert(i,results[i]["href"])
+        HrefArr.insert(i,results[i]["href"])
 
     for i in range(8):
         if "facebook" in HrefArr[i]:
@@ -129,9 +134,9 @@ def genWebUrlLinkANDFilteredSiteURL(results):
     
 
 
-def serchQuery(query):
+def serchQuery(queryName):
     return DDGS().text(
-    query=search_query,
+    query=queryName,
     region = "wt-wt",
     safesearch='off',
     timeLimit='7d',
@@ -159,8 +164,25 @@ try:
         result = serchQuery(search_query[i])
         webUrl = genWebUrlLinkANDFilteredSiteURL(result)
         fetchAndSaveToFile(result,webUrl,path)
-        parseHTML(path)
+        soup = parseHTML(path)
+        with open(path,"w",encoding="utf-8"):
+            pass
+        
+        print("\n")
+        print("WEBSITE IMAGE ********************")
+        img = soup.find_all("img", alt=re.compile(r"logo|home", re.I))
+        print(img)
+
+        if img == []:
+            icon = soup.find_all("link",rel="icon")
+            print(icon)
+
+        description = soup.find_all("p")
+
+        print("\n")
+        print("WEBSITE DESCRIPTION ********************")
+        print(description)
+
 
 except Exception as e:
     print("Couldn't scrape Data",e)
-    
