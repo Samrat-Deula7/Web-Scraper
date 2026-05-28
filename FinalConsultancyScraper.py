@@ -6,43 +6,44 @@ from bs4 import BeautifulSoup
 from rapidfuzz import fuzz
 import os
 from dotenv import load_dotenv
+from openai import OpenAI
+import pandas as pd
 
 load_dotenv()
 
-DB_API_KEY = os.getenv("API_KEY")
+client = OpenAI(api_key = os.getenv("API_KEY"))
+
+# JSON data
+
+
+
+
+
 
 search_query =[
-    "Mate's Education Pvt Ltd",
-    "Brilliant Education And Career Services Pvt. Ltd.",
-    "Kangaroo Education Foundation Pvt. Ltd.",
-    "Netco Technology Pvt Ltd",
-    "Prime Education Information Center Pvt. Ltd",
-    "Shatakshee Educational Foundation Pvt Ltd",
-    "Oli And Associates Pvt. Ltd.",
-    "Himalayan White House Education Consultancy Pvt Ltd.",
     "Way Education Pvt Ltd US",
     "Common Foundation Pvt Ltd",
     "Sagip Educational Consultancy Pvt. Ltd",
     "The Next Education Consultancy Pvt. Ltd",
-    "Fast Track Education Consultancy Pvt Ltd.",
-    "Wide Range Consultancy Pvt Ltd",
-    "Expert Education and Visa Service Nepal Pvt. Ltd",
-    "Golden Gate International Education Pvt. Ltd.",
-    "Tara International Education Pvt",
-    "Open Vision Education Foundation Pvt. Ltd.",
-    "Edupark Pvt. Ltd.",
-    "Guru The Pathfinderk"
+    "Fast Track Education Consultancy Pvt Ltd."
 ]
 path = "data.html"
 siteURLName = ""
 filteredSiteURLName = ""
 webURLName = ""
-HrefArr = []
-FilteredHref = []
 ScoreBoard = []
 best_href = None
 best_score = -1
 
+
+def chat_with_gpt(prompt):
+    response = client.chat.completions.create(
+        model="gpt-4",
+        messages=[{"role": "user", "content": prompt}]
+    )
+    return response.choices[0].message.content.strip()
+
+# print(chat_with_gpt("Hello GPT-4, how are you?"))
 
 def genWebUrlLinkANDFilteredSiteURL(results):
     count = 0
@@ -51,6 +52,9 @@ def genWebUrlLinkANDFilteredSiteURL(results):
     best_href = None
     best_score = -1
     FBURL = ""
+    HrefArr = []
+    FilteredHref = []
+    
 
     for i in range(8):
         HrefArr.insert(i,results[i]["href"])
@@ -62,7 +66,7 @@ def genWebUrlLinkANDFilteredSiteURL(results):
             print("This is the Facebook LINK ***************")
             print(HrefArr[i])
 
-    FilteredHref = [x for x in HrefArr if not any(k in x for k in ["facebook", "linkedin", "youtube","school","maps","worldwide"])]
+    FilteredHref = [x for x in HrefArr if not any(k in x for k in ["facebook", "linkedin", "youtube","school","maps","worldwide","tiktok"])]
 
     print("\n")
     print("ORIGINAL LIST OF LINKS ********************")
@@ -127,9 +131,13 @@ def genWebUrlLinkANDFilteredSiteURL(results):
 
             webURLName = best_href
 
+    HrefArr = []
+    FilteredHref = []
+
     print("\n")
     print("WEBSITE URL ********************")
     print(webURLName)
+
 
     return webURLName
 
@@ -163,9 +171,33 @@ def parseHTML(path):
 try:
 
     def core(query):
+        name = []
+        logo = []
+        desc = []
+        url = []
+        AboutConsultancy = ""
+        GPT_DESC = ""
+
+        data = {
+            "Name":name,
+            "Url":url,
+            "Logo":logo,
+            "Desc":desc
+        }
         
         result = serchQuery(query)
+
+        # JSON name
+
+        name.append(query)
+
+
         webUrl = genWebUrlLinkANDFilteredSiteURL(result)
+
+        # JSON url
+
+        url.append(webURLName)
+
         fetchAndSaveToFile(result,webUrl,path)
         soup = parseHTML(path)
         with open(path,"w",encoding="utf-8"):
@@ -178,8 +210,18 @@ try:
         if img == []:
             icon = soup.find_all("link",rel="icon")
             print(icon[0]["href"])
+            ImgLOGO = icon[0]["href"]
+
+            # JSON LOGO
+
+            logo.append(ImgLOGO)
         else:
             print(img[0]["src"])
+            IconLOGO = img[0]["src"]
+
+            # JSON LOGO
+
+            logo.append(IconLOGO)
 
         description = soup.find_all("p", text = re.compile(r"consultancy|education", re.I))
 
@@ -187,16 +229,38 @@ try:
         print("WEBSITE DESCRIPTION ********************")
 
         for desc in description:
-            print(desc.get_text())
+            AboutConsultancy = desc.get_text()
+
+        print(AboutConsultancy)
+
+        GPT_DESC = chat_with_gpt(AboutConsultancy + "Summarize the description into 50 words make it clear and professional")
+
+        # JSON DESC
+
+        desc.append(GPT_DESC)
+
+        print("Ending of DESCRIPTION ********************")
+
 
         if description == [] or (img == [] and icon == []):
             core(query)
+
+        # JSON Data
+
+        print("############### This is the data to export to json ###############")
+        print(data)
 
 
    
 
     for i in range(len(search_query)):
         core(search_query[i])
+
+        
+
+    
+    
+
 
 
 except Exception as e:
