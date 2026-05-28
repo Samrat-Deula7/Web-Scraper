@@ -7,6 +7,7 @@ from rapidfuzz import fuzz
 
 
 search_query = "THE RED EDUHOUSE PVT. LTD."
+path = "data.html"
 WEBURL = ""
 siteURLName = ""
 filteredSiteURLName = ""
@@ -30,7 +31,7 @@ results = DDGS().text(
     max_results=50
 )
 
-path = "data.html"
+
 
 def fetchAndSaveToFile(url,path):
     response = requests.get(url)
