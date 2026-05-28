@@ -34,13 +34,9 @@ webURLName = ""
 HrefArr = []
 FilteredHref = []
 ScoreBoard = []
-
-siteCount = 0
-
-
-
 best_href = None
 best_score = -1
+
 
 def genWebUrlLinkANDFilteredSiteURL(results):
     count = 0
@@ -171,17 +167,48 @@ try:
         print("\n")
         print("WEBSITE IMAGE ********************")
         img = soup.find_all("img", alt=re.compile(r"logo|home", re.I))
-        print(img)
+        
 
         if img == []:
             icon = soup.find_all("link",rel="icon")
-            print(icon)
+            print(icon[0]["href"])
+        else:
+            print(img[0]["src"])
 
-        description = soup.find_all("p")
+        description = soup.find_all("p", text = re.compile(r"consultancy|education", re.I))
 
         print("\n")
         print("WEBSITE DESCRIPTION ********************")
-        print(description)
+        
+        for desc in description:
+            print(desc.get_text())
+
+        if description == []:
+            result = serchQuery(search_query[i])
+            webUrl = genWebUrlLinkANDFilteredSiteURL(result)
+            fetchAndSaveToFile(result,webUrl,path)
+            soup = parseHTML(path)
+            with open(path,"w",encoding="utf-8"):
+                pass
+
+            print("\n")
+            print("WEBSITE IMAGE ********************")
+            img = soup.find_all("img", alt=re.compile(r"logo|home", re.I))
+            print(img)
+
+            if img == []:
+                icon = soup.find_all("link",rel="icon")
+                print(icon)
+
+            description = soup.find_all("p", text = re.compile(r"consultancy|education", re.I))
+
+            print("\n")
+            print("WEBSITE DESCRIPTION ********************")
+
+            for desc in description:
+                print(desc.get_text())
+
+
 
 
 except Exception as e:
