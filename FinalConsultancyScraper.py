@@ -28,6 +28,8 @@ best_href = None
 best_score = -1
 query = ""
 isDone = ""
+soup = ""
+
 
 def chat_with_gpt(prompt):
     response = client.chat.completions.create(
@@ -148,10 +150,14 @@ def serchQuery(queryName):
 
 
 def fetchAndSaveToFile(results,url,path):
-    response = requests.get(url)
-    with open(path,"w", encoding="utf-8") as f:
-        f.write(response.text)
-    return "Done"
+    try:
+        response = requests.get(url)
+        with open(path,"w", encoding="utf-8") as f:
+            f.write(response.text)
+        return "Done"
+    except requests.exceptions.RequestException as e:
+        print(f"Couldn't scrape {url}: {e}")
+        return None
 
 
 def parseHTML(path):
@@ -201,7 +207,7 @@ def core(query,i):
 
         if isDone == "Done":
             soup = parseHTML(path)
-            with open(path,"w",encoding="utf-8"):
+            with open(path,"w",encoding="utf-8") as f:
                 pass
         print("\n")
         print("WEBSITE IMAGE ********************")
@@ -275,9 +281,8 @@ def core(query,i):
 
         # Export to JSON
         df.to_json("resultdata.json", orient="records", indent=4)
+        
 
-
-   
 
 for i, query in enumerate(search_query):
     core(query, i)
