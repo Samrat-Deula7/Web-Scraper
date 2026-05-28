@@ -13,20 +13,13 @@ load_dotenv()
 
 client = OpenAI(api_key = os.getenv("API_KEY"))
 
-# JSON data
+df = pd.read_excel("C:\\Users\\hp\\Downloads\\consultancy data.xlsx")
 
 
+# importing columd data from excel file from downloads
 
+search_query = df["Name of Company"].tolist()
 
-
-
-search_query =[
-    "Way Education Pvt Ltd US",
-    "Common Foundation Pvt Ltd",
-    "Sagip Educational Consultancy Pvt. Ltd",
-    "The Next Education Consultancy Pvt. Ltd",
-    "Fast Track Education Consultancy Pvt Ltd."
-]
 path = "data.html"
 siteURLName = ""
 filteredSiteURLName = ""
@@ -201,7 +194,7 @@ def core(query,i):
 
         # JSON url
 
-        url.insert(i,webUrl)
+        url.insert(i,webUrl if webUrl else "")
 
         fetchAndSaveToFile(result,webUrl,path)
         soup = parseHTML(path)
@@ -219,7 +212,7 @@ def core(query,i):
 
             # JSON LOGO
 
-            logo.insert(i,ImgLOGO)
+            logo.insert(i,ImgLOGO if ImgLOGO else "")
 
         else:
             print(img[0]["src"])
@@ -227,7 +220,7 @@ def core(query,i):
 
             # JSON LOGO
 
-            logo.insert(i,IconLOGO)
+            logo.insert(i,IconLOGO if IconLOGO else "")
 
         description = soup.find_all("p", text = re.compile(r"consultancy|education", re.I))
 
