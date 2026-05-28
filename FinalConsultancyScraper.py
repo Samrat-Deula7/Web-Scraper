@@ -34,7 +34,7 @@ webURLName = ""
 ScoreBoard = []
 best_href = None
 best_score = -1
-
+query = ""
 
 def chat_with_gpt(prompt):
     response = client.chat.completions.create(
@@ -168,35 +168,40 @@ def parseHTML(path):
         return soup
 
 
-try:
 
-    def core(query):
-        name = []
-        logo = []
-        desc = []
-        url = []
-        AboutConsultancy = ""
-        GPT_DESC = ""
+name = []
+logo = []
+ConsultancyDesc = []
+url = []
+data = {
+"Name":name,
+"Url":url,
+"Logo":logo,
+"Desc":ConsultancyDesc
+}
+AboutConsultancy = ""
+GPT_DESC = ""
 
-        data = {
-            "Name":name,
-            "Url":url,
-            "Logo":logo,
-            "Desc":desc
-        }
+def core(query,i):
+    try:
+        global name, logo, desc, url, data, AboutConsultancy, GPT_DESC
+        
+        
+
+        
         
         result = serchQuery(query)
 
         # JSON name
 
-        name.append(query)
+        name.insert(i,query)
 
 
         webUrl = genWebUrlLinkANDFilteredSiteURL(result)
 
         # JSON url
 
-        url.append(webURLName)
+        url.insert(i,webUrl)
 
         fetchAndSaveToFile(result,webUrl,path)
         soup = parseHTML(path)
@@ -214,14 +219,15 @@ try:
 
             # JSON LOGO
 
-            logo.append(ImgLOGO)
+            logo.insert(i,ImgLOGO)
+
         else:
             print(img[0]["src"])
             IconLOGO = img[0]["src"]
 
             # JSON LOGO
 
-            logo.append(IconLOGO)
+            logo.insert(i,IconLOGO)
 
         description = soup.find_all("p", text = re.compile(r"consultancy|education", re.I))
 
@@ -233,12 +239,17 @@ try:
 
         print(AboutConsultancy)
 
-        GPT_DESC = chat_with_gpt(AboutConsultancy + "Summarize the description into 50 words make it clear and professional")
+        GPT_DESC = chat_with_gpt(AboutConsultancy + " Summarize the description into 50 words make it clear and professional")
+
+        print("\n")
+        print("Chat GPT response ++++++---/-*-*--++*-+*/-+//-+- ********************")
+        print(GPT_DESC)
 
         # JSON DESC
 
-        desc.append(GPT_DESC)
+        ConsultancyDesc.insert(i,GPT_DESC)
 
+        print("\n")
         print("Ending of DESCRIPTION ********************")
 
 
@@ -246,15 +257,24 @@ try:
             core(query)
 
         # JSON Data
-
+    except Exception as e:
+        print("Couldn't scrape Data",e)
+        
+    finally:
+        print("\n")
         print("############### This is the data to export to json ###############")
         print(data)
+
+        df = pd.DataFrame(data)
+
+        # Export to JSON
+        df.to_json("resultdata.json", orient="records", indent=4)
 
 
    
 
-    for i in range(len(search_query)):
-        core(search_query[i])
+for i in range(len(search_query)):
+    core(search_query[i],i)
 
         
 
@@ -263,5 +283,4 @@ try:
 
 
 
-except Exception as e:
-    print("Couldn't scrape Data",e)
+
