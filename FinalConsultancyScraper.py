@@ -155,35 +155,9 @@ def parseHTML(path):
 
 
 try:
-    
-    for i in range(len(search_query)):
-        result = serchQuery(search_query[i])
-        webUrl = genWebUrlLinkANDFilteredSiteURL(result)
-        fetchAndSaveToFile(result,webUrl,path)
-        soup = parseHTML(path)
-        with open(path,"w",encoding="utf-8"):
-            pass
-        
-        print("\n")
-        print("WEBSITE IMAGE ********************")
-        img = soup.find_all("img", alt=re.compile(r"logo|home", re.I))
-        
 
-        if img == []:
-            icon = soup.find_all("link",rel="icon")
-            print(icon[0]["href"])
-        else:
-            print(img[0]["src"])
-
-        description = soup.find_all("p", text = re.compile(r"consultancy|education", re.I))
-
-        print("\n")
-        print("WEBSITE DESCRIPTION ********************")
-        
-        for desc in description:
-            print(desc.get_text())
-
-        if description == []:
+    def core():
+        for i in range(len(search_query)):
             result = serchQuery(search_query[i])
             webUrl = genWebUrlLinkANDFilteredSiteURL(result)
             fetchAndSaveToFile(result,webUrl,path)
@@ -194,11 +168,13 @@ try:
             print("\n")
             print("WEBSITE IMAGE ********************")
             img = soup.find_all("img", alt=re.compile(r"logo|home", re.I))
-            print(img)
+
 
             if img == []:
                 icon = soup.find_all("link",rel="icon")
-                print(icon)
+                print(icon[0]["href"])
+            else:
+                print(img[0]["src"])
 
             description = soup.find_all("p", text = re.compile(r"consultancy|education", re.I))
 
@@ -208,8 +184,11 @@ try:
             for desc in description:
                 print(desc.get_text())
 
+            if description == []:
+                core()
 
 
-
+    core()
+    
 except Exception as e:
     print("Couldn't scrape Data",e)
