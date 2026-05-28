@@ -4,6 +4,12 @@ import requests
 import re
 from bs4 import BeautifulSoup
 from rapidfuzz import fuzz
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+DB_API_KEY = os.getenv("API_KEY")
 
 search_query =[
     "Mate's Education Pvt Ltd",
@@ -156,39 +162,42 @@ def parseHTML(path):
 
 try:
 
-    def core():
-        for i in range(len(search_query)):
-            result = serchQuery(search_query[i])
-            webUrl = genWebUrlLinkANDFilteredSiteURL(result)
-            fetchAndSaveToFile(result,webUrl,path)
-            soup = parseHTML(path)
-            with open(path,"w",encoding="utf-8"):
-                pass
-
-            print("\n")
-            print("WEBSITE IMAGE ********************")
-            img = soup.find_all("img", alt=re.compile(r"logo|home", re.I))
-
-
-            if img == []:
-                icon = soup.find_all("link",rel="icon")
-                print(icon[0]["href"])
-            else:
-                print(img[0]["src"])
-
-            description = soup.find_all("p", text = re.compile(r"consultancy|education", re.I))
-
-            print("\n")
-            print("WEBSITE DESCRIPTION ********************")
-
-            for desc in description:
-                print(desc.get_text())
-
-            if description == []:
-                core()
+    def core(query):
+        
+        result = serchQuery(query)
+        webUrl = genWebUrlLinkANDFilteredSiteURL(result)
+        fetchAndSaveToFile(result,webUrl,path)
+        soup = parseHTML(path)
+        with open(path,"w",encoding="utf-8"):
+            pass
+        print("\n")
+        print("WEBSITE IMAGE ********************")
+        img = soup.find_all("img", alt=re.compile(r"logo|home", re.I))
 
 
-    core()
-    
+        if img == []:
+            icon = soup.find_all("link",rel="icon")
+            print(icon[0]["href"])
+        else:
+            print(img[0]["src"])
+
+        description = soup.find_all("p", text = re.compile(r"consultancy|education", re.I))
+
+        print("\n")
+        print("WEBSITE DESCRIPTION ********************")
+
+        for desc in description:
+            print(desc.get_text())
+
+        if description == [] or (img == [] and icon == []):
+            core(query)
+
+
+   
+
+    for i in range(len(search_query)):
+        core(search_query[i])
+
+
 except Exception as e:
     print("Couldn't scrape Data",e)
