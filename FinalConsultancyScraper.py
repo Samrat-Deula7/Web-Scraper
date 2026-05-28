@@ -27,6 +27,7 @@ ScoreBoard = []
 best_href = None
 best_score = -1
 query = ""
+isDone = ""
 
 def chat_with_gpt(prompt):
     response = client.chat.completions.create(
@@ -150,6 +151,7 @@ def fetchAndSaveToFile(results,url,path):
     response = requests.get(url)
     with open(path,"w", encoding="utf-8") as f:
         f.write(response.text)
+    return "Done"
 
 
 def parseHTML(path):
@@ -195,20 +197,20 @@ def core(query,i):
 
         url.insert(i,webUrl)
 
-        fetchAndSaveToFile(result,webUrl,path)
-        soup = parseHTML(path)
-        with open(path,"w",encoding="utf-8"):
-            pass
+        isDone = fetchAndSaveToFile(result,webUrl,path)
+
+        if isDone == "Done":
+            soup = parseHTML(path)
+            with open(path,"w",encoding="utf-8"):
+                pass
         print("\n")
         print("WEBSITE IMAGE ********************")
-        img = soup.find_all("img", alt=re.compile(r"logo|home|icon|brand", re.I)) \     
-          + soup.find_all("img", class_=re.compile(r"logo|home|icon|brand", re.I))
+        img = soup.find_all("img", alt=re.compile(r"logo|home|icon|brand", re.I)) or soup.find_all("img", class_=re.compile(r"logo|home|icon|brand", re.I)) or soup.find_all("img",src=re.compile(r"logo",re.I))
 
 
 
         if img == []:
-            icon = soup.find_all("link", rel="icon") \
-                + soup.find_all("link", class_=re.compile(r"logo|home|icon|brand", re.I))
+            icon = soup.find_all("link", rel="icon") or soup.find_all("link", class_=re.compile(r"logo|home|icon|brand", re.I))
 
             if icon:
                 print(icon[0]["href"])
@@ -262,6 +264,7 @@ def core(query,i):
         # JSON Data
     except Exception as e:
         print("Couldn't scrape Data",e)
+        pass
         
     finally:
         print("\n")
