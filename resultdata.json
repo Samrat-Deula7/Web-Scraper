@@ -1,14 +1,158 @@
 [
     {
         "Name":"PANACEA EDUCATION FOUNDATION PVT.LTD",
-        "Url":"https:\/\/www.consultancynepal.com\/panacea-education-foundation",
-        "Logo":"https:\/\/www.consultancynepal.com\/assets\/images\/logo-2.png",
-        "Desc":"Located in New Baneshwor, Kathmandu, Panacea Education Foundation offers comprehensive guidance for those seeking to enter the Japanese education system and adapt to its lifestyle. Their expert approach ensures a seamless transition to studying and living in Japan."
+        "Url":"https:\/\/panacea.edu.np\/",
+        "Logo":"https:\/\/panacea.edu.np\/wp-content\/themes\/panacea-theme\/assets\/img\/shapes\/service3-icon-shape.svg",
+        "Desc":"The Panacea Education Foundation consists of seasoned professionals dedicated to supporting student achievement. Passionate and committed, they work diligently to help students reach their aspirations."
     },
     {
         "Name":"One Up Pvt Ltd",
         "Url":"https:\/\/www.oneupnepal.com\/",
         "Logo":"https:\/\/www.oneupnepal.com\/assets\/images\/oneup\/logo.png",
-        "Desc":"Based in New Baneshwor, Kathmandu, Panacea Education Foundation offers professional guidance for those aiming to join the Japanese education system and adapt to its lifestyle. Their expertise ensures the highest level of support for integration into the Japanese educational environment."
+        "Desc":"The Panacea Education Foundation comprises experienced professionals passionate about empowering students to achieve their objectives. Their dedicated team offers individualized support and guidance tailored to each student's unique educational pathway."
+    },
+    {
+        "Name":"Sigma Educational Consultancy & Cultural Trade Center",
+        "Url":"https:\/\/sigmaeducon.com\/",
+        "Logo":"https:\/\/www.oneupnepal.com\/assets\/images\/oneup\/logo.png",
+        "Desc":"The Panacea Education Foundation is a group of seasoned experts dedicated to assisting students in achieving their objectives. Their passion and dedication lie in providing support and fostering academic success."
+    },
+    {
+        "Name":"Mission USA Educational Consultancy Pvt. Itd",
+        "Url":"https:\/\/missionusa.edu.np\/",
+        "Logo":"https:\/\/missionusa.edu.np\/upload\/site-logo\/NewLogo_1645351653246mision-usa-logo.png",
+        "Desc":"Mission USA Education is a successful consulting agency representing prestigious global institutions and universities. They are committed to providing comprehensive educational consultancy services, ensuring the best academic opportunities for students internationally. They expertly match students to programs fitting their individual needs and aspirations."
+    },
+    {
+        "Name":"Guru consultants",
+        "Url":"https:\/\/www.guru.com\/",
+        "Logo":"https:\/\/res.cloudinary.com\/gurucom\/image\/upload\/b_rgb:2b3247,w_178,f_auto\/static\/homepage\/enterprise_logo_2x_exqrwu.jpg",
+        "Desc":"\"Mission USA Education is a successful consulting agency specialized in representing prestigious global educational institutions. Our commitment lies in fostering academic excellence and driving students' success through professional guidance and tailored services.\""
+    },
+    {
+        "Name":"Clover Consultancy Pvt. Ltd.",
+        "Url":"https:\/\/tracxn.com\/d\/legal-entities\/india\/clover-consultants-pvt-ltd\/__-dUVOBIiSzw0D7iq7iM8aI9N4vKQ_14t-u2bvW2vR7s",
+        "Logo":"",
+        "Desc":"Mission USA Education is a successful consulting agency representing prestigious global educational institutions. Our commitment is to provide expert consulting and strategic support, offering students access to the best educational opportunities and institutions to fulfill their academic aspirations in a professional manner."
+    },
+    {
+        "Name":"Study Access Nepal Pvt.Ltd",
+        "Url":"https:\/\/studyaccessnepal.edu.np\/",
+        "Logo":"\/images\/16x16\/11890295\/_lergwrge-removebg-preview.png",
+        "Desc":"Study Access Nepal is committed to universalizing quality education as a fundamental right. Our focus lies on eliminating barriers to education and making it accessible to all, enhancing the transformative power of education across all strata of society."
+    },
+    {
+        "Name":"Aims Global Educational Consultancy Pvt. Ltd.",
+        "Url":"https:\/\/connect.pierapps.com\/widgets\/agencies\/45757",
+        "Logo":"https:\/\/dtbhzdanf36fd.cloudfront.net\/agencies\/45757\/logo_small.png?1611815126",
+        "Desc":"Study Access Nepal is committed to promoting education as a basic right. We aim to ensure the accessibility of quality education for everyone, believing it to be a crucial tool for personal and societal development."
+    },
+    {
+        "Name":"Lincoln International Education Foundation and Business Consultancy Services Pvt. Ltd.",
+        "Url":"https:\/\/lincolneduvisa.com\/",
+        "Logo":"https:\/\/lincolneduvisa.com\/uploads\/site\/1f7e7-untitled-1.png",
+        "Desc":"We serve as a bridge, connecting you to your desired educational goal. Utilizing our professional expertise and resources, we guide and support you in achieving your academic aspirations, ensuring a clear and focused path towards your target destination in education."
+    },
+    {
+        "Name":"REAL WORLD ABROAD STUDY CONSULTANCY PVT.LTD.",
+        "Url":"https:\/\/www.realworldnepal.com\/country\/canada.html",
+        "Logo":"https:\/\/lincolneduvisa.com\/uploads\/site\/1f7e7-untitled-1.png",
+        "Desc":"\"We serve as a crucial link to your educational journey. Our goal is to provide comprehensive assistance, ensuring that you reach your educational goals efficiently and effectively. We connect you with your desired educational institutions, simplifying complex processes and enabling hassle-free progress in your academic pursuits.\""
+    },
+    {
+        "Name":"Golden walk Educational and Visa services",
+        "Url":"https:\/\/www.goldenwalk.com.np\/public\/services",
+        "Logo":"https:\/\/www.goldenwalk.com.np\/public\/image\/logo.png",
+        "Desc":"Golden Walk is a leading immigration and education consultancy that provides personalized assistance and expert support to individuals aspiring to study or relocate abroad. Our professional services aim to simplify and facilitate the process, helping individuals realize their dreams of international education or life."
+    },
+    {
+        "Name":"Canadian Study Center Pvt. Ltd.",
+        "Url":"https:\/\/csc.edu.np\/",
+        "Logo":"https:\/\/csc.edu.np\/wp-content\/uploads\/2024\/03\/CSC-Global-Final-04.png",
+        "Desc":"As an education consultancy, we go beyond providing guidance. We consider ourselves as your reliable partners in your pursuit of global education. Trust us to navigate your academic journey, applying our expertise for your global learning ambitions."
+    },
+    {
+        "Name":"Precious Voyage Educational Center vtLtd.",
+        "Url":"https:\/\/www.preciousvoyage.com\/",
+        "Logo":"https:\/\/csc.edu.np\/wp-content\/uploads\/2024\/03\/CSC-Global-Final-04.png",
+        "Desc":"We are not just an educational consultancy, but also your reliable allies on your path to global education. We are dedicated to guiding you through every step, providing expert advice and personalized solutions to secure your educational future on an international scale."
+    },
+    {
+        "Name":"Best Globe Educational Institute PvtLtd.",
+        "Url":"https:\/\/globedu.com.np\/",
+        "Logo":"https:\/\/globedu.com.np\/wp-content\/uploads\/2019\/09\/wh-logo-1.png",
+        "Desc":"The team at Globe is highly competent and supportive in foreign study consultations. They're a trusted career partner, helping students identify their potential and aligning it with suitable opportunities. The consultancy's expert guidance has successfully led to the reviewer pursuing their studies in Japan."
+    },
+    {
+        "Name":"Noble Gurus kathmandu Pvt.Ltd",
+        "Url":"https:\/\/noblecareergurus.com\/",
+        "Logo":"",
+        "Desc":"The team at Globe Consultancy is highly skilled, knowledgeable, and extremely helpful. They assist students in identifying and pursuing suitable short and long-term goals for studying abroad. Their expertise enabled me to successfully realize my potential and I am now thriving in my studies in Japan."
+    },
+    {
+        "Name":"Oasis Education Group Pvt. Ltd",
+        "Url":"http:\/\/oasiseducation.in\/",
+        "Logo":"",
+        "Desc":"The Globe team is experienced and skilled in the field of international study. They provide personalized guidance to students, helping them realize their potential and determine a suitable career path. With their support, the reviewer is now successfully studying in Japan. Globe is credited for this achievement."
+    },
+    {
+        "Name":"Oxford Dot EduStudy. Consultancy PvtLtd. ..",
+        "Url":"https:\/\/www.findglocal.com\/NP\/Kathmandu\/462852500492672\/Oxford.-Edu-study-consultancy",
+        "Logo":"\/img\/findglocal\/logo.png",
+        "Desc":"Oxford Edu Study Consultancy provides comprehensive guidance for your international study aspirations. We assist you in transforming your dream of studying abroad into a reality by providing expert consulting services. Start your inspirational academic journey with us."
+    },
+    {
+        "Name":"Global Social research and educational consultancy Pvt.Ltd",
+        "Url":"https:\/\/nepaliconsultancyreviews.com\/list-of-registered-consultancy-in-nepal\/",
+        "Logo":"",
+        "Desc":"Nepal hosts over 3000 educational consultancies, consisting of both registered and unregistered firms. These institutions play a crucial role in guiding students about global education opportunities, ensuring their future success."
+    },
+    {
+        "Name":"May Educational Consultancy PvtLtd..",
+        "Url":"https:\/\/www.cybo.com\/NP-biz\/may-education-consultancy",
+        "Logo":"https:\/\/d1cs4jq1fdiv1p.cloudfront.net\/lyra011\/img\/logo_reg.png",
+        "Desc":"Nepal is home to over 3,000 educational consultancies, encompassing both registered and unregistered entities. They offer diverse educational services, contributing significantly to the nation's education sector."
+    },
+    {
+        "Name":"Mentors Educational Consultancy PvtLtd..",
+        "Url":"https:\/\/www.mentorsnepal.com\/",
+        "Logo":"https:\/\/d1cs4jq1fdiv1p.cloudfront.net\/lyra011\/img\/logo_reg.png",
+        "Desc":"Nepal hosts over 3,000 educational consultancies, encompassing both registered and unregistered entities. These establishments provide critical educational guidance and services to the nation's students."
+    },
+    {
+        "Name":"Worldwide Int'l Education Counselling",
+        "Url":"https:\/\/www.consultancynepal.com\/global-education-counselling-centre",
+        "Logo":"https:\/\/www.consultancynepal.com\/assets\/images\/logo-2.png",
+        "Desc":"Global Education Counseling Center in Kathmandu is an international education consultancy, providing student profiling, career counseling, VISA guidance, test preparations, language classes, and more. They have partnerships with 100 Universities in India and Japan and enable students to study in various countries. They also offer specific guidance for Nepalese students interested in studying MBBS abroad."
+    },
+    {
+        "Name":"Index Educational Consultancy Pvt. Ltd.",
+        "Url":"https:\/\/indexaeco.com.np\/",
+        "Logo":"https:\/\/indexaeco.com.np\/storage\/files\/shares\/696de97f53b98.webp",
+        "Desc":"Index Education Consultancy is a leading education consulting firm in 2026. It offers comprehensive professional services for students aiming to study abroad. Specializing in academic counseling, admission guidance and visa assistance, the firm is dedicated to helping students achieve their international educational goals. All rights reserved."
+    },
+    {
+        "Name":"SORA INTERNATIONAL EDUCATION INSTITUTE PVT. LTD.",
+        "Url":"https:\/\/sora-int.com\/",
+        "Logo":"",
+        "Desc":"Index Education Consultancy, established in 2026, is dedicated to providing premium educational guidance and support. We are experts in delivering high-quality consultation services, ensuring our clients secure admission into top educational institutions. Our offerings are protected by copyright, emphasizing our commitment to exclusivity and professionalism."
+    },
+    {
+        "Name":"Pixar Educational Consultancy PvtLtd.",
+        "Url":"https:\/\/www.uniagents.com\/en\/consultants\/pixar-educational-consultancy.htm",
+        "Logo":"https:\/\/www.uniagents.com\/agent-logo-thumbs\/agent-default.jpg",
+        "Desc":"Index Education Consultancy, established in 2026, is a premier agency offering holistic educational guidance. It handles diverse education-related services. The consultancy ensures clients receive personalized attention, assisting them effectively in their pursuit of academic growth. All rights are reserved by Index Education Consultancy."
+    },
+    {
+        "Name":"Bridge International Consultancy and Migration Pvt Ltd",
+        "Url":"https:\/\/ecan.org.np\/member-detail\/bridge-international-consultan\/",
+        "Logo":"\/static\/custom\/images\/logo.png",
+        "Desc":"Established in 2015, Bridge International Consultancy and Migration Private Limited (BICM) is a globally recognized educational consultancy specialising in student recruitment. With offices in Nepal, UK, and Australia, BICM offers services like career counseling, test preparation, university admissions, and visa assistance, and has successfully placed 7,900+ students in major Commonwealth countries. BICM also provides pre-departure and job support, and is a member of the British Council, ICEF, and NAFSA."
+    },
+    {
+        "Name":"Chubasha Educational Affair Pvt. Ltd.",
+        "Url":"https:\/\/ecan.org.np\/member-detail\/chubasha-educational-affair-pv\/",
+        "Logo":"\/static\/custom\/images\/logo.png",
+        "Desc":"The Educational Consultancy Association of Nepal (ECAN), registered in 1997, provides guidance to parents seeking overseas education for their children. Recognized by educationalists and overseas providers, ECAN serves as the controlling body for all educational consultancies in Nepal, ensuring a conducive environment for international education."
     }
 ]
