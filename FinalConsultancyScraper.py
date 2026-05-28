@@ -152,7 +152,7 @@ def serchQuery(queryName):
 
 def fetchAndSaveToFile(results,url,path):
     try:
-        response = requests.get(url, timeout=30)
+        response = requests.get(url, timeout=60)
         with open(path,"w", encoding="utf-8") as f:
             f.write(response.text)
         return "Done"
