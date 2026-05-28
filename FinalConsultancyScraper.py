@@ -29,6 +29,7 @@ best_score = -1
 query = ""
 isDone = ""
 soup = ""
+soupData = ""
 
 
 def chat_with_gpt(prompt):
@@ -164,8 +165,8 @@ def parseHTML(path):
     with open(path,"r", encoding="utf-8") as f:
         html_content = f.read()
 
-        soup = BeautifulSoup(html_content,"html.parser")
-        return soup
+        soupData = BeautifulSoup(html_content,"html.parser")
+        return soupData
 
 
 
@@ -184,7 +185,7 @@ GPT_DESC = ""
 
 def core(query,i):
     try:
-        global name, logo, desc, url, data, AboutConsultancy, GPT_DESC
+        global name, logo, desc, url, data, AboutConsultancy, GPT_DESC,soup
         
         
 

@@ -1,20 +1,596 @@
 [
-    {
-        "Name":"Central College of Vocational Training Pvt. Ltd.",
-        "Url":"https:\/\/www.developmentaid.org\/organizations\/view\/84413\/nepal-institute-of-technical-and-vocational-training-pvtltd-nitvt",
-        "Logo":"\/assets\/img\/favicon\/favicon-96x96.png",
-        "Desc":"As an AI, I would need the original text or description you want to be summarized in order to assist you. Please provide the information so I can give you a better answer."
-    },
-    {
-        "Name":"Himalaya Education Foundation Pvt. Ltd.",
-        "Url":"https:\/\/www.himalayaneducation.org\/",
-        "Logo":"\/\/images.squarespace-cdn.com\/content\/v1\/676812b19be271354b843c4d\/6cea5aff-52da-4989-91b4-e05230ea4e52\/HEF+logo+White.png?format=1500w",
-        "Desc":"HEF maintains strategic partnerships with communities in Munsiyari and Chaukori, Uttarakhand, India. Engaging with local entities, we collectively foster education and economic autonomy in these mountainous villages. The enduring relationship is built on mutual learning and substantial investment for sustainable growth."
-    },
-    {
-        "Name":"G.L.E.C International Education Pvt. Ltd.",
-        "Url":"https:\/\/worldpopulationreview.com\/country-rankings\/education-rankings-by-country",
-        "Logo":"\/_astro\/logo2x.U07E811p.png",
-        "Desc":"Differences between education systems primarily arise from disparities in funding, literacy rates, and enrollment in primary and secondary education. These factors significantly differentiate top-ranked and bottom-ranked educational structures."
-    }
+  {
+    "Name": "Central College of Vocational Training Pvt. Ltd.",
+    "Url": "https:\/\/the-corporate.com\/profile\/Central-College-of-Vocational-Training-Pvt.-Ltd.",
+    "Logo": "",
+    "Desc": "As an AI model, I need more information to complete this task. Please provide the description that you'd like summarized."
+  },
+  {
+    "Name": "Himalaya Education Foundation Pvt. Ltd.",
+    "Url": "https:\/\/www.himalayaneducation.org\/",
+    "Logo": "\/\/images.squarespace-cdn.com\/content\/v1\/676812b19be271354b843c4d\/6cea5aff-52da-4989-91b4-e05230ea4e52\/HEF+logo+White.png?format=1500w",
+    "Desc": "HEF has established valuable partnerships with communities in Munsiyari and Chaukori, Uttarakhand, India, focusing on education and economic liberty. By collaborating with local leaders, we aim to foster sustainable development and improve residents' quality of life in these mountainous villages."
+  },
+  {
+    "Name": "G.L.E.C International Education Pvt. Ltd.",
+    "Url": "https:\/\/giecintl.com.np\/",
+    "Logo": "https:\/\/giecintl.com.np\/wp-content\/uploads\/2024\/12\/GIEC-logo-new-final-with-reverse-wh.png",
+    "Desc": "Reach out to us for expert guidance to help attain your educational goals. Our professionals are committed to providing personalized strategies to ensure your academic success. Contact us today for a comprehensive educational roadmap tailored to your needs."
+  },
+  {
+    "Name": "Stairway Educational Services Pvt. Ltd.",
+    "Url": "https:\/\/www.kumarijob.com\/stairway-education-services-pvt-ltd",
+    "Logo": "",
+    "Desc": "Get in touch with us to let our experts direct you toward accomplishing your educational goals. We offer educated advice and professional guidance tailored to your unique aspirations. Achieve academic success with our expert guidance. Click the button below and start your journey today."
+  },
+  {
+    "Name": "Smart Infosys Nepal P. Ltd",
+    "Url": "https:\/\/smartinfosys.edu.np\/",
+    "Logo": "",
+    "Desc": "Contact us for professional guidance in realizing your educational aspirations. Our expert team is available to provide comprehensive support on your educational journey. Click the below button to get started."
+  },
+  {
+    "Name": "GLOSSA PREPARATORY ACADEMY PVT. LTD",
+    "Url": "https:\/\/hamronepalibazar.com\/business-listing\/consultancyinstitute\/glossa-preparatory-academy_14623",
+    "Logo": "https:\/\/hamronepalibazar.com\/oc-content\/themes\/epsilon\/images\/logo.jpeg",
+    "Desc": "Glossa Prep, an efficient consultancy, offers comprehensive preparation for competitive tests such as IELTS, SAT, GRE among others, aiding students\u2019 overseas educational pursuits. From visa interviews to university selection, experienced teachers provide in-depth guidance. Quality learning available at an affordable price for aspiring foreign degree seekers."
+  },
+  {
+    "Name": "HAEC Global Pvt. Ltd.",
+    "Url": "https:\/\/haec.edu.np\/",
+    "Logo": "https:\/\/haec.edu.np\/admin\/images\/logo.png",
+    "Desc": "Choosing HAEC Global for higher education in Australia proved to be an excellent decision. Their insightful guidance and support significantly assisted my academic journey."
+  },
+  {
+    "Name": "Falcon Educational Consultancy Pvt. Ltd.",
+    "Url": "https:\/\/falconedu.com\/",
+    "Logo": "https:\/\/falconedu.com\/wp-content\/uploads\/2024\/10\/Falcon-Logo-Glow-1.png",
+    "Desc": "Falcon Education organizes Education Expos in Pakistan, representing top institutions for students interested in studying abroad. Delegates from partner institutions are welcomed. The event is free for all students, but pre-registration is required to secure a place."
+  },
+  {
+    "Name": "Get Through Guides Int'l Education Foundation (P) Ltd.",
+    "Url": "https:\/\/www.uniagents.com\/en\/consultants\/get-through-guides-intl-education-foundation-p-ltd.htm",
+    "Logo": "https:\/\/www.uniagents.com\/favicon.ico",
+    "Desc": "Falcon Education organizes Education Expos in Pakistan for prestigious institutions, welcoming delegates and representing institutions for students interested in studying abroad. These events are free, but pre-registration is required to secure a place."
+  },
+  {
+    "Name": "Sakura Nepal Consultancy Pvt. Ltd.",
+    "Url": "https:\/\/sakuranepal.com.np\/",
+    "Logo": "https:\/\/www.uniagents.com\/favicon.ico",
+    "Desc": "Falcon Education organizes educational expos in Pakistan for prestigious institutions, helping students interested in studying abroad connect with representatives from partner institutions. These events are free for students, but pre-registration is required to secure attendance."
+  },
+  {
+    "Name": "Chitwan Chiba Education Center",
+    "Url": "https:\/\/www.chiba.edu.np\/",
+    "Logo": "dist\/images\/chiba-logo.png",
+    "Desc": "The reviewer highly recommends Chiba Education Center, praising its effective language classes and efficient visa processing. Their services facilitated the reviewer's seamless transition to living in Japan, manifesting their dream into reality, attributing their success to the Center's support."
+  },
+  {
+    "Name": "Studylane International Pvt Ltd",
+    "Url": "https:\/\/www.abroadadvise.com\/consultancy\/studylane-international",
+    "Logo": "\/_next\/image?url=%2Flogo%2Fdefault-logo.png&w=384&q=75",
+    "Desc": "Studylane focuses on open communication, transparency and reliability in its education counseling. Their process guides students through every step of studying abroad, from initial consultation to application submission. This ensures students embark on their journey with clear understanding and confidence."
+  },
+  {
+    "Name": "Nova Education and Consulting Services Pvt. Ltd",
+    "Url": "https:\/\/www.instagram.com\/novaeducationkathmandu\/",
+    "Logo": "https:\/\/static.cdninstagram.com\/rsrc.php\/yr\/r\/rzWiSjZRxk5.webp",
+    "Desc": "Studylane's education counseling prioritizes open communication, transparency, and reliability, providing continuous support throughout the study abroad application process. Their services aim to instill clarity and confidence in students from the initial consultation to application submission."
+  },
+  {
+    "Name": "King's Institute Pvt Ltd",
+    "Url": "https:\/\/kingsinstitute.edu.np\/",
+    "Logo": "https:\/\/kingsinstitute.edu.np\/upload\/Contact\/Image_16738490163371uFJrpG8C19EOJP76fusR2oNW0kWS9lRlPDhYj5r.png",
+    "Desc": "Studylane's education counseling emphasizes open communication, transparency, and reliability. It provides comprehensive support to students planning to study abroad, right from initial consultation to application submission. This approach garners clarity and confidence for students throughout their overseas study journey."
+  },
+  {
+    "Name": "TRINITY EDUCATION PVT. LTD.",
+    "Url": "https:\/\/trinity.com.np\/",
+    "Logo": "https:\/\/trinity.com.np\/assets\/img\/Web Intro Short WhiteBG (1).gif",
+    "Desc": "As an AI, I would need the text\/document which needs to be summarized. Without it, I couldn't provide an accurate and concise summary in your desired format."
+  },
+  {
+    "Name": "Nepal Japan Counselling Centre Pvt. Ltd.",
+    "Url": "https:\/\/njcc.edu.np\/",
+    "Logo": "https:\/\/njcc.edu.np\/wp-content\/uploads\/2026\/02\/cropped-njcc-logo-1.png",
+    "Desc": "The Nepal Japan Counselling Centre Pvt. Ltd (NJCC), established in 2012 and based in Sorhakhutte, Kathmandu, is a renowned educational consultancy. It has been providing high-quality educational services for nearly a decade, demonstrating its expertise and dedication to the field."
+  },
+  {
+    "Name": "Orient Consultancy Pvt. Ltd.",
+    "Url": "https:\/\/orientconsultancynepal.com\/",
+    "Logo": "https:\/\/orientconsultancynepal.com\/wp-content\/uploads\/2025\/07\/logo__2_-removebg-preview-1-2-175x88.png",
+    "Desc": "Without a provided description, summarizing it into 50 words is challenging. Nonetheless, Orient Consultancy Pvt. Ltd is a reputed business consulting firm, dedicated to providing innovative solutions and professional services to help clients navigate their unique business landscapes. Their commitment to quality service ensures satisfaction and success."
+  },
+  {
+    "Name": "Alpha Education Consultancy Pvt Ltd",
+    "Url": "https:\/\/alphaed.net\/",
+    "Logo": "https:\/\/assets.squarespace.com\/universal\/default-favicon.ico",
+    "Desc": "The Alpha Educational Consultancy Ltd is a professional education consulting firm. We offer expert advice and guidance for students aiming to study domestically and internationally. Our consultants are experienced in admission processes, scholarship applications, and visa procedures. We tailor solutions to meet individual educational goals, optimizing opportunities for academic achievement."
+  },
+  {
+    "Name": "PAURAKHI EDUCATIONAL CONSULTANCY P LTD",
+    "Url": "https:\/\/paurakhiedu.com\/about-us\/",
+    "Logo": "https:\/\/paurakhiedu.com\/wp-content\/uploads\/2025\/04\/Paurakhi-Logo.png",
+    "Desc": "Registered Education Consultancy provides expert guidance for students seeking international education opportunities. They offer personalized counseling to help students select the right course and institution, aid in application processes, and offer visa assistance ensuring a seamless transition to their chosen educational destination. Their services are accredited for quality assurance."
+  },
+  {
+    "Name": "Advisory Centre for International Education",
+    "Url": "https:\/\/www.acie.edu.np\/",
+    "Logo": "https:\/\/www.acie.edu.np\/wp-content\/uploads\/2022\/02\/final-logo.png",
+    "Desc": "Registered Education Consultancy is a professionally managed advisory firm specializing in providing guidance to students seeking further education abroad. The firm handles every aspect of the process, from course selection and university admission, to visa processing and accommodation, ensuring a smooth and successful overseas education journey for students."
+  },
+  {
+    "Name": "Impulse Education Pvt ltd",
+    "Url": "https:\/\/impulseeducations.com\/",
+    "Logo": "https:\/\/impulseeducations.com\/wp-content\/uploads\/2023\/12\/cropped-blue-new-logo-1.png",
+    "Desc": "Impulse Educations offers comprehensive learning solutions for students of all ages. It professionally caters to educational needs with tailored programs, enhancing the learning experience through modern techniques. They provide a systematic approach to education, fostering an environment for academic success. Contact at info@impulseeducations.com."
+  },
+  {
+    "Name": "EXCEL POKHARA EDUCATION CONSULTANCY PVT. LTD",
+    "Url": "https:\/\/excelpokhara.com\/",
+    "Logo": "https:\/\/excelpokhara.com\/wp-content\/uploads\/2024\/12\/328792841_1386407208799761_1909377800640138275_n.jpg",
+    "Desc": "Excel Pokhara Educational Consultancy is a leading professional service offering comprehensive guidance and assistance for students seeking further education. Our team of experienced advisors provide course selection, application processes and visa assistance, ensuring students achieve their academic goals smoothly."
+  },
+  {
+    "Name": "Professional Education Consultancy Pvt. Ltd.",
+    "Url": "https:\/\/professional.edu.np\/",
+    "Logo": "data:image\/svg+xml;base64,PHN2ZyB3aWR0aD0iMSIgaGVpZ2h0PSIxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg==",
+    "Desc": "Professional Education Consultancy, established in 2024, offers expert advisory services in the education sector. We design tailored, strategic solutions to meet individual client needs. Our extensive knowledge results in high-quality educational consultancy for institutional betterment. Ultimately, we drive transformative results, fostering learning environments conducive to success."
+  },
+  {
+    "Name": "Study Plus Private Limited",
+    "Url": "https:\/\/studyplus.com.np\/landing\/",
+    "Logo": "https:\/\/studyplus.com.np\/wp-content\/uploads\/2025\/07\/tourism-logo.png",
+    "Desc": "An Education tour is a planned, organized trip specifically designed for learning purposes. It provides first-hand experience and a unique learning platform for students, complementing their classroom learning. Education tours can include visits to different geographical locations, educational institutes, scientific laboratories, or historical monuments."
+  },
+  {
+    "Name": "Dream Destiny Education Foundation Pvt. Ltd",
+    "Url": "https:\/\/nepal.worldplaces.me\/places-in-kathmandu\/60930069-dream-destiny-education-foundation-pvt-ltd.html",
+    "Logo": "",
+    "Desc": "An Education Tour is a professionally organized trip aimed at providing learners with practical knowledge and exposure to real-world applications in various fields of study. It offers interactive learning experiences outside the conventional classroom setting, contributing significantly to the students' overall educational growth."
+  },
+  {
+    "Name": "COCORO JAPANESE LANGUAGE SCHOOL PVT. LTD.",
+    "Url": "https:\/\/www.cocoro.com.np\/",
+    "Logo": "https:\/\/www.cocoro.com.np\/uploads\/company-profile\/47_1688121243.jpeg",
+    "Desc": "Cocoro Japanese Language School is a renowned educational consultancy, known for offering top-tier guidance and counselling to students. It excels in providing personalized educational support, enabling students to reach their full potential in their academic pursuits."
+  },
+  {
+    "Name": "Ktm budanilkantha international academy",
+    "Url": "https:\/\/www.consultancynepal.com\/budhanilkantha-international-academy",
+    "Logo": "https:\/\/www.consultancynepal.com\/assets\/images\/logo-2.png",
+    "Desc": "Budhanilkantha International Academy is a certified registration center for IDP Education Nepal, serving as an authorized institution for educational registration purposes. This emphasizes its commitment to providing quality education and facilitating access to premium education resources and opportunities."
+  },
+  {
+    "Name": "Dreamland Abroad Education Pvt. Ltd",
+    "Url": "https:\/\/www.uniagents.com\/en\/consultants\/dreamland-abroad-education-pvtltd\/performance.htm",
+    "Logo": "https:\/\/www.uniagents.com\/favicon.ico",
+    "Desc": "Budhanilkantha International Academy has been officially certified as a registered center for IDP Education Nepal, a global leader in international education and study abroad services."
+  },
+  {
+    "Name": "Bridge Blue Global Nepal Pvt. Ltd.",
+    "Url": "https:\/\/www.bridgeblueglobal.com\/",
+    "Logo": "",
+    "Desc": "Budhanilkantha International Academy is formally recognized as an authorized registration centre for IDP Education Nepal. This certification connects the academy to a global network of educational resources and validates its ability to assist students in their educational pursuits."
+  },
+  {
+    "Name": "Window Nepal Education Centre Pvt. Ltd.",
+    "Url": "https:\/\/www.windownepal.edu.np\/",
+    "Logo": " https:\/\/www.windownepal.edu.np\/images\/40341764235979.png",
+    "Desc": "Welcome to the official website of Window Nepal Education Center Pvt. Ltd. We encourage regular visits for updates on our latest activities and company information. Stay informed about our ongoing projects and company developments in real-time."
+  },
+  {
+    "Name": "Eminent Educational Institute Pvt. Ltd.",
+    "Url": "https:\/\/eminentedu.com\/about-us",
+    "Logo": "https:\/\/eminentedu.com\/public\/logo\/logo.png",
+    "Desc": "Our mission is to facilitate students in discovering universities offering top-tier education that aligns with their financial capabilities. We strive to streamline the process, ensuring every student can pursue quality education without financial strain."
+  },
+  {
+    "Name": "Umbrella Education Foundation",
+    "Url": "https:\/\/www.umbrellaedu.com\/",
+    "Logo": "",
+    "Desc": "Our goal is to support students in identifying high-caliber universities matching their financial capabilities. We aim to bridge education quality and affordability, simplifying the process for students seeking optimum value in higher education."
+  },
+  {
+    "Name": "Focus Education & Consultants Pvt. Ltd.",
+    "Url": "https:\/\/focusedu.com.np\/",
+    "Logo": "https:\/\/focusedu.com.np\/wp-content\/uploads\/2022\/09\/Focus-White-Logo-01-01-01.png",
+    "Desc": "Choosing Focus Education was highly beneficial for me. It promptly boosted my professional success and set a strong foundation for my future career. I enthusiastically recommend their invaluable services to my network."
+  },
+  {
+    "Name": "Informatics Consultancy Pvt. Ltd.",
+    "Url": "https:\/\/infoconsultant.edu.np\/",
+    "Logo": "",
+    "Desc": "Choosing Focus Education was a prudent decision that contributed to my success and laid a solid foundation for my career advancement. I highly recommend their services due to the measurable impact they have had on my professional journey."
+  },
+  {
+    "Name": "Aims Abroad Education",
+    "Url": "https:\/\/aimseducation.com\/universities",
+    "Logo": "\/image\/aims-logo.svg",
+    "Desc": "Without a given description to summarize, I'm unable to create a 50-word summary for you. Please provide the necessary text."
+  },
+  {
+    "Name": "OX-BRIDGE NEPAL EDUCATIONAL CONSULTANCY PVT. LTD.",
+    "Url": "https:\/\/niec.edu.np\/",
+    "Logo": "https:\/\/niec.edu.np\/wp-content\/uploads\/2024\/02\/NIEC-logo.png",
+    "Desc": "With over 26 years of experience, NIEC has an established reputation in test preparation and foreign study placements, aiding thousands of students in fulfilling their academic and career goals abroad. NIEC is a trusted consultancy in Nepal for studying in countries such as USA, UK, Canada, Australia, Ireland, New Zealand, and Germany."
+  },
+  {
+    "Name": "Boston Abroad Educational Consultancy Pvt. Ltd.",
+    "Url": "https:\/\/turantcall.com\/details\/boston-abroad-educational-consultancy-pvtltd-1722492661\/consultancy",
+    "Logo": "https:\/\/www.turantcall.com\/images\/logo-3.png",
+    "Desc": "Boston Abroad Educational Consultancy is a TITI certified agency that understands the value of your current qualifications and your aspiration to study internationally. We can guide you professionally to achieve your educational goals in your chosen destination country."
+  },
+  {
+    "Name": "NIBC Educational Foundation Pvt. Ltd.",
+    "Url": "https:\/\/nepal.worldplaces.me\/places-in-kathmandu\/56758780-nibc-educational-foundation.html",
+    "Logo": "",
+    "Desc": "Boston Abroad Educational Consultancy is a TITI certified agency, proficient in assessing your qualifications and facilitating international education in your desired country. We understand the importance of your goals and are equipped with the necessary skills and compliance to help you achieve them."
+  },
+  {
+    "Name": "Dynamic Universe Education Pvt. Ltd",
+    "Url": "https:\/\/dynamic.edu.np\/",
+    "Logo": "https:\/\/dynamic.edu.np\/wp-content\/themes\/archiesoft\/img\/logo01.png",
+    "Desc": "The reviewer highly praises Dynamic Universe Education for their invaluable support and guidance for studying abroad, from planning to visa grant. The reviewer commends the organization's dedication and expertise, strongly recommending it to others seeking international higher education opportunities."
+  },
+  {
+    "Name": "Bhawishya Consultancy Pvt. Ltd.",
+    "Url": "https:\/\/bhawishya.org\/about-us\/",
+    "Logo": "http:\/\/bhawishya.org\/wp-content\/uploads\/2024\/10\/Logo-Bhawishya.webp",
+    "Desc": "Bhawishya Consultancy Pvt. Ltd. (BCPL) offers comprehensive services in career counseling and personal development. Committed to excellence, the team of MBA graduates uses their expertise in various fields to help individuals realize their dreams and build strong client relationships. Special emphasis is placed on proactive, innovative, and tailor-made solutions."
+  },
+  {
+    "Name": "Aki Educational Consultancy Pvt. Ltd.",
+    "Url": "https:\/\/akiconsultant.com\/",
+    "Logo": "https:\/\/akiconsultant.com\/wp-content\/uploads\/2024\/11\/AKI-Logo.png",
+    "Desc": "AKI Educational Consultancy offers bespoke guidance and extensive services, covering university applications to visa aid, facilitating a seamless study abroad experience. It caters to individuals seeking personalized assistance for their overseas education journey, ensuring all their needs are met efficiently and professionally."
+  },
+  {
+    "Name": "Alight Group of Consultants Pvt Ltd",
+    "Url": "https:\/\/alightgroup.org\/",
+    "Logo": "https:\/\/alightgroup.org\/upload\/Contact\/Image_1738142429189logo.png",
+    "Desc": "Alight Group of Consultants offers personalized and transparent guidance to students pursuing international education opportunities. Established in 2011, the firm takes an ethical approach, ensuring a genuine, bespoke service tailored to individual student needs."
+  },
+  {
+    "Name": "Seto Education Services Pvt. Ltd.",
+    "Url": "https:\/\/seto.edu.np\/",
+    "Logo": "https:\/\/seto.edu.np\/lwd_core\/uploads\/2018\/08\/SETO-LIGHT-LOGO.png",
+    "Desc": "Seto Education Services is a premiere 2017-founded educational company providing high quality educational resources and consultancy services. We strictly adhere to copyright regulations, ensuring all materials are original and legally compliant. We focus on significantly enhancing the learning experience, by tailoring our services to individual learning needs and implementing cutting-edge, learner-friendly teaching methodologies."
+  },
+  {
+    "Name": "Axis International Education Pvt. Ltd.",
+    "Url": "https:\/\/www.axisinternational.net\/",
+    "Logo": "logo.png",
+    "Desc": "Axis Education Consultant is a comprehensive solution for international study and coaching requirements. Our expertise lies in guiding students to make informed decisions about studying at foreign educational institutions."
+  },
+  {
+    "Name": "Model global Visas Consultancy",
+    "Url": "https:\/\/www.consultancynepal.com\/model-global-visas-consultancy",
+    "Logo": "https:\/\/www.consultancynepal.com\/assets\/images\/logo-2.png",
+    "Desc": "Model Global VISAs Consultancy provides education consultancy for students aiming to study in various countries including Denmark, India, New Zealand, Australia, the UK, USA, South Korea, and Canada. They offer career counseling and guidance on VISA procedures for those aspiring to work abroad post-graduation."
+  },
+  {
+    "Name": "SKYLARK JAPANESE LANGUAGE SCHOOL PVT. LTD.",
+    "Url": "https:\/\/skylarkjls.mewese.net\/",
+    "Logo": "https:\/\/skylarkjls.mewese.net\/storage\/profile-images\/HR0qV4WIJlxIMO9VRltx.png",
+    "Desc": "Our expert teachers, certified at N1 and N2 levels in the Japanese Language Proficiency Test (JLPT), provide practical education and high-quality academic guidance to our students to enhance their knowledge and skills."
+  },
+  {
+    "Name": "POSSIBLE INTERNATIONAL EDUCATIONAL CNSULTANCY PVT.LTD.",
+    "Url": "https:\/\/possibleinternational.com\/",
+    "Logo": "https:\/\/possibleinternational.com\/Frontend\/img\/icon\/2.png",
+    "Desc": "Possible International Educational Consultancy (PIEC) is a specialized educational consultancy based in central Kathmandu, Nepal. They offer innovative solutions to fulfill educational needs, demonstrating a commitment to professional service and customer satisfaction."
+  },
+  {
+    "Name": "Indo-Global Foundation Pvt. Ltd.",
+    "Url": "https:\/\/innovativezoneindia.com\/indo-global-business-excellence-recognition-2024\/",
+    "Logo": "data:image\/svg+xml;base64,PHN2ZyB2aWV3Qm94PScwIDAgMjIwIDQ2JyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnPjwvc3ZnPg==",
+    "Desc": "Possible International Educational Consultancy (PIEC) is a specialized educational consultancy located in Kathmandu's CBD area. They offer innovative educational consulting solutions."
+  },
+  {
+    "Name": "Edify Educational Consultancy PvtLtd..",
+    "Url": "https:\/\/edify.pk\/",
+    "Logo": "\/images\/logo.svg",
+    "Desc": "We offer tailored support to optimize your potential for international education. Understanding the perfect foreign enrolment strategy can be facilitated through our expert aid. Get in touch to explore better and strategize your international educational pathway."
+  },
+  {
+    "Name": "Supreme Educational Centre PvtLtd..",
+    "Url": "https:\/\/www.instagram.com\/secintlstudy\/",
+    "Logo": "https:\/\/static.cdninstagram.com\/rsrc.php\/yr\/r\/rzWiSjZRxk5.webp",
+    "Desc": "Unlock your true academic potential for foreign education with our guidance. We can help design the best international enrolment strategy for you. Contact us to explore suitable opportunities."
+  },
+  {
+    "Name": "New Nobel institute Pvt. Ltd",
+    "Url": "https:\/\/nobelef.com\/",
+    "Logo": "https:\/\/nobelef.com\/wp-content\/uploads\/2023\/10\/Nobel-Logo.jpg",
+    "Desc": "Start your educational journey with us by scheduling a free consultation. Our counselors will guide you in fulfilling your educational aspirations. Fill out the attached form and kickstart your transformative experience."
+  },
+  {
+    "Name": "Primo Global Education Services",
+    "Url": "https:\/\/primonautic.com\/course-category\/global-maritime-courses\/",
+    "Logo": "\/logo.png",
+    "Desc": "Begin your educational transformation with us. Complete the form for a free consultation. Our counselors will guide you towards achieving your educational goals."
+  },
+  {
+    "Name": "Care International Educational Consultants Pvt.",
+    "Url": "https:\/\/careedu.com.np\/",
+    "Logo": "https:\/\/careedu.com.np\/wp-content\/uploads\/2019\/02\/logo-1-e1551265634706.png",
+    "Desc": "Care International Educational Consultant provides comprehensive training and support for international education, specializing in facilitating study in the USA, UK, Canada, Australia, NZ and other European countries. We offer the most current and authentic information to meet students' specific needs."
+  },
+  {
+    "Name": "IMIS Educational Pvt. Ltd.",
+    "Url": "https:\/\/imiseducational.edu.np\/",
+    "Logo": ".\/images\/logo.jpg",
+    "Desc": "IMIS Educational Pvt Ltd is an esteemed institution specializing in quality education and training services. Established in 2020, we strive to provide unparalleled educational experiences, fostering growth and professional development. All content is copyrighted and reserved exclusively for our database. We relentlessly uphold Intellectual Property rights."
+  },
+  {
+    "Name": "Out Study Abroad Programs PvtLtd..",
+    "Url": "https:\/\/www.uniagents.com\/en\/consultants\/out-study-abroad-programs-pvt-ltd.htm",
+    "Logo": "https:\/\/www.uniagents.com\/favicon.ico",
+    "Desc": "IMIS Educational Pvt Ltd is a reputable institution holding the copyright for its exclusive educational materials as of 2020. All content is securely protected under this copyright, promising professional education solutions with unique, reserved content rights, guaranteeing top-notch, standardized education quality."
+  },
+  {
+    "Name": "MAYUMI CONSULTANCY PVT. LTD.",
+    "Url": "https:\/\/nicemayumi.edu.np\/",
+    "Logo": "https:\/\/nicemayumi.edu.np\/wp-content\/themes\/nice-mayumi\/img\/logo.png",
+    "Desc": "Our counselors are certified by ICEF and offer reliable guidance on international education pathways. They possess current knowledge and are committed to helping students pursue their global educational goals."
+  },
+  {
+    "Name": "Prasana International Education Pvt.Ltd.",
+    "Url": "https:\/\/ecan.org.np\/member-detail\/prasana-international-educatio\/",
+    "Logo": "\/static\/custom\/images\/logo.png",
+    "Desc": "Prasana International Education Pvt Ltd. is a renowned education consultancy in Nepal, well-known for expert career advice and visa success. Our specialized team of educated counselors and international university graduates provide personalized guidance, focusing not only on the right course and university selection but also comprehensive career advising."
+  },
+  {
+    "Name": "NEPAL JAPAN INTERNATIONAL EDUCATION SCHOOL",
+    "Url": "http:\/\/nepaljea.com\/",
+    "Logo": ".\/img\/logo4.png",
+    "Desc": "We are a consortium of Japanese language institutions in Nepal, specializing in projects for studying in Japan. Our services range from Japanese language education to cultural immersion programs. We are committed to delivering comprehensive and professional Japanese language solutions to meet your needs."
+  },
+  {
+    "Name": "Green Apple Inc. Pvt. Ltd",
+    "Url": "https:\/\/greenapplevisa.com\/",
+    "Logo": "https:\/\/greenapplevisa.com\/wp-content\/uploads\/2024\/07\/WhatsApp-Image-2024-07-10-at-11.58.54_4bd171ef-90x90.jpg",
+    "Desc": "Benefit from our vast expertise in immigration, overseas education, and career advancement. Our years of experience are invaluable for individuals seeking professional progression, international educational opportunities, or assistance with immigration issues. Harness our knowledge to realize your ambitions and navigate complex processes with ease."
+  },
+  {
+    "Name": "Global Central Consultancy & Educational Services Pvt. Ltd.",
+    "Url": "https:\/\/globalcentralnepal.com\/",
+    "Logo": "img\/logo.jpg",
+    "Desc": "Global Central Consultancy Pvt. Ltd., incorporated in 2026, is a comprehensive consulting firm offering professional business solutions. Our dynamic approach is to deliver innovative and strategic solutions to assist businesses in achieving their objectives. We uphold professionalism, excellence, and integrity, ensuring all clients receive top-quality service. We hold worldwide operations and rights."
+  },
+  {
+    "Name": "National Unique Education Consultancy",
+    "Url": "https:\/\/uniquelyeducation.com\/",
+    "Logo": "https:\/\/aimeem4.sg-host.com\/wp-content\/uploads\/2024\/09\/web-logo-blue.png",
+    "Desc": "Working with Grebot Donnelly on school rebranding has been transformative, inspiring change internally and externally. The quality of their work and passion has been remarkable and created palpable excitement. The rebranding has initiated crucial internal changes for improved education delivery and invigorated staff and students. This signals an exciting new chapter of expansion and growth."
+  },
+  {
+    "Name": "Subhagriha Institute and Consultancy Pvt Ltd",
+    "Url": "https:\/\/www.nepaliconsultancy.com\/consultancies\/Subha-Griha-Institute-and-Consultancy-Pvt-Ltd?location=New-Baneshwor-Kathmandu-Nepal",
+    "Logo": "\/_next\/image?url=%2Fimages%2Flogo1.png&w=384&q=75",
+    "Desc": "Discover the ultimate consulting services tailored to your unique business needs. Our consultancy provides strategic insights, operational expertise, and industry knowledge to facilitate growth, enhance efficiency, and drive transformation. Connect with experienced consultants dedicated to helping your business reach its full potential. Perfect consultancy solutions for your success."
+  },
+  {
+    "Name": "Misaki Japanese and International Language Education Centre PvtLtd..",
+    "Url": "https:\/\/misakieducation.com.np\/",
+    "Logo": "https:\/\/misakieducation.com.np\/wp-content\/uploads\/2023\/11\/logo.png",
+    "Desc": "In Lalitpur, Unika Japanese Language Consultancy is renowned for its excellent educational services. They offer expert guidance on studying in Japan, handling the entire process from language preparation to university placement. Unika is distinguished by its commitment to student success, backed by a highly experienced team."
+  },
+  {
+    "Name": "Scope Student Services",
+    "Url": "https:\/\/scopeedu.net\/",
+    "Logo": "https:\/\/scopeedu.net\/wp-content\/themes\/scope\/img\/scopeedu-logo.gif",
+    "Desc": "Celebrating 16 years of excellence, our leading agency, with 10,000+ satisfied clients, is committed to delivering outstanding educational services. We encourage prospective students to thoroughly research their study options. We strictly adhere to our policy of accepting only certified and approved documents for admission and visa processing."
+  },
+  {
+    "Name": "institute of Japanese PvtLtd..",
+    "Url": "https:\/\/www.learnjapanese.co\/blog\/japanese-language-institutes\/",
+    "Logo": "assets\/images\/logo.png",
+    "Desc": "Established in 2016, Yuumei Japanese Language Centre has amassed vast experience in providing quality language education over the years. Their expertise lies in delivering comprehensive and professional Japanese language training."
+  },
+  {
+    "Name": "EXCEL EDUCATION PVT LTD",
+    "Url": "https:\/\/excel.edu.np\/",
+    "Logo": "https:\/\/excel.edu.np\/wp-content\/uploads\/2022\/06\/favicon.png",
+    "Desc": "Excel Education Pvt Ltd (2021-2026) offers specialized, innovative, and quality educational services. The company focuses on enhancing student performance, fostering academic success and promoting lifelong learning. Our dedicated faculty members and effective teaching methodologies set us apart in the competitive educational industry."
+  },
+  {
+    "Name": "Synergy Career Consultants PvtLtd..",
+    "Url": "https:\/\/synergy.edu.np\/",
+    "Logo": "https:\/\/synergy.edu.np\/wp-content\/uploads\/2024\/06\/Synergy-Logo@2x.png",
+    "Desc": "As your committed partner, Synergy Career Consultants offers unmatched support and expertise, guiding you through the global education journey. We facilitate your aspirations with world-class services, easing the course towards global academia. Experience our unparalleled professionalism as we pave your way to international educational accomplishment."
+  },
+  {
+    "Name": "I Global Learning Centre Pvt. Ltd.",
+    "Url": "https:\/\/alcglobaledu.com\/",
+    "Logo": "https:\/\/alcglobaledu.com\/wp-content\/uploads\/2025\/06\/alc_new_logo.png",
+    "Desc": "Synergy Career Consultants provides exceptional support and expertise in guiding individuals towards international education. It acts as a dedicated partner in navigating this journey, ensuring the best academic and career paths. Work with Synergy to leverage global education opportunities professionally."
+  },
+  {
+    "Name": "Education First Pvt. Ltd.",
+    "Url": "https:\/\/www.consultancynepal.com\/education-first",
+    "Logo": "https:\/\/www.consultancynepal.com\/assets\/images\/logo-2.png",
+    "Desc": "EDF Alliance, with their 14-year experience, have successfully assisted over 4,000 students in securing admissions abroad through their comprehensive and transparent consultancy services. With a dedicated team and collaborations with elite colleges, they offer cost-effective solutions for students, particularly from Nepal. EDF also hosts virtual sessions with international education advisors."
+  },
+  {
+    "Name": "First Step Educational consultancy pvt ltd",
+    "Url": "https:\/\/fasttrack.edu.np\/",
+    "Logo": "https:\/\/fasttrack.edu.np\/wp-content\/uploads\/2019\/07\/Fast-Track-Logo.png",
+    "Desc": "Fast Track Education Consultancy, founded in 2022, provides comprehensive education consulting services. Powered by Live with Dreams, we ensure the highest quality assistance in educational preferences, resulting in best fit academic outcomes. Our professional approach guarantees personalized solutions for every individual's distinct educational journey."
+  },
+  {
+    "Name": "shin japanese school pvt.ltd.",
+    "Url": "https:\/\/shin-edupower.com\/",
+    "Logo": "data:image\/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABEAQAAAABip8ypAAAAAnRSTlMAAHaTzTgAAAASSURBVDjLY2AYBaNgFIwC8gAABEAAASmN4VUAAAAASUVORK5CYII=",
+    "Desc": "Vasant Valley School organized their inaugural educational trip to Japan, with a delegation of 23 students and teachers visiting the esteemed Shibuya Kyoiku Gakuen. This Japan-based institution runs two different schools, elevating its standing in global academics. The trip underscores Vasant Valley's commitment to promoting international education and cultural exchange."
+  },
+  {
+    "Name": "Nikko Japanese Language School",
+    "Url": "https:\/\/www.findglocal.com\/NP\/Kathmandu\/2228814557403003\/Nikko-Japanese-Language-School",
+    "Logo": "\/img\/findglocal\/logo.png",
+    "Desc": "Vasant Valley School facilitated an educational trip to Japan, marking its dedication to promoting international education and cultural exchange. A delegation of 23 students and teachers visited Shibuya Kyoiku Gakuen, a prominent academic institution in Japan, underlining the school's commitment to global learning experiences."
+  },
+  {
+    "Name": "MANABU JAPANESE LANGUAGE EDUCATION PVT.LTD",
+    "Url": "https:\/\/jalsan.com.np\/member-detail\/manabu-japanese-language-educa\/",
+    "Logo": "\/static\/assets\/image\/branding-logo--jlsan-white.png",
+    "Desc": "Vasant Valley School organized their inaugural educational trip to Japan, fostering international education and cultural exchange. The delegation of 23 students and teachers visited Shibuya Kyoiku Gakuen, a esteemed academic institution in Japan. Shibuya Kyoiku Gakuen operates two distinguished schools."
+  },
+  {
+    "Name": "Three Sixty Education Solution Pvt Ltd",
+    "Url": "https:\/\/360education.global\/",
+    "Logo": "data:image\/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=",
+    "Desc": "Get access to our comprehensive 360 Education Mock Test to evaluate your exam preparedness. Simply fill in the form. This process allows you to identify your strengths and areas of improvement, ensuring your best chances for success when taking the actual exam. Experience an efficient and professional exam preparation with us."
+  },
+  {
+    "Name": "Success Abroad Study Pvt Ltd",
+    "Url": "https:\/\/suchanaa.com\/directory\/success-abroad-study-banepa-office\/",
+    "Logo": "\/static\/images\/Google.png",
+    "Desc": "SAS prioritizes creativity and innovation in counseling students, constantly striving to improve by gathering feedback and engaging in both domestic and international academic circles. We continuously assess the quality and effectiveness of our services to ensure the highest standard for individuals, college and university representatives."
+  },
+  {
+    "Name": "YOKOHAMA JAPANESE LANGUAGE ACADEMY PVT. LTD.",
+    "Url": "https:\/\/yojala.edu.np\/",
+    "Logo": "https:\/\/yojala.edu.np\/upload\/Contact\/Image_173650028775yojala logo_horizontal-01.svg",
+    "Desc": "Prioritizing top-tier academic instruction, we strive to offer the finest quality education. Our commitment lies in fostering an intellectually stimulating environment that encourages critical thinking, innovation, and academic excellence. With a dedicated faculty and advanced curriculum, we ensure student growth and success in their chosen fields."
+  },
+  {
+    "Name": "Integral Education Consultancy Pvt.Ltd",
+    "Url": "https:\/\/www.sdmiracle.com.np\/",
+    "Logo": "https:\/\/www.sdmiracle.com.np\/uploads\/settings\/logo-1748759113.jpeg",
+    "Desc": "The reviewer highly recommends SD Miracle, highlighting their positive experience at the globally recognized educational institute. They believe that choosing this institution should be a straightforward decision due to its high caliber of education."
+  },
+  {
+    "Name": "kokorozashi Japanese Culture & Research Center",
+    "Url": "https:\/\/globisusa.com\/kokorozashi-seminar-report-february-19-2022\/",
+    "Logo": "",
+    "Desc": "Choosing the globally acclaimed educational institute SD Miracle was a rewarding experience. It is a commendable choice for quality education, meriting immediate consideration."
+  },
+  {
+    "Name": "YASASHISA JAPANESE LANGUAGE SCHOOL",
+    "Url": "https:\/\/teamjapanese.com\/beautiful-words-in-japanese\/",
+    "Logo": "",
+    "Desc": "The user had an enjoyable experience with SD Miracle, which they deem as one of the best educational institutes worldwide. They confidently recommend it as an obvious choice for education without any hesitation."
+  },
+  {
+    "Name": "Access Education Network",
+    "Url": "https:\/\/nmu.edu\/ean\/",
+    "Logo": "images\/nmu-logo.png",
+    "Desc": "Students enrolled in Michigan's 15 public universities, upper peninsula colleges, K-12 schools, and associated educational institutions receive comprehensive access to Northern Michigan University's LTE network, both at home and school, with extended coverage throughout the Upper Peninsula in the near future."
+  },
+  {
+    "Name": "Kathmandu Alliance Education Consultancy Pvt. Ltd.",
+    "Url": "https:\/\/ktmalliance.com\/about",
+    "Logo": "https:\/\/ktmalliance.com\/upload\/Contact\/Image1_16880372896018Yj10xelQUwuLVF3KT4JPfiyPaDVtdh90WVuj3kK.png",
+    "Desc": "Our core expertise lies in consultancy, supplemented by PTE and IELTS prep classes, flight training ground classes, visa processing, and career counseling. We are planning to expand our reach with new branches in various cities within Nepal and around the world."
+  },
+  {
+    "Name": "INNOVATIVE JAPANESE LANGUAGE INSTITUTE",
+    "Url": "https:\/\/ijli.weebly.com\/",
+    "Logo": "",
+    "Desc": "Our primary focus is consultancy, complemented by PTE, IELTS preparation, flight training, visa document processing, and career counselling. We\u2019re planning to expand our operations within Nepal and globally, by opening branches in key cities."
+  },
+  {
+    "Name": "Sagarmatha Japanese Language Institute",
+    "Url": "https:\/\/ssjli.com\/",
+    "Logo": "https:\/\/ssjli.com\/wp-content\/uploads\/2024\/02\/ssjlilogo.svg",
+    "Desc": "Japan's educational system, particularly strong in STEM\u2014Science, Technology, Engineering, and Math\u2014provides an excellent reason for international students to pursue their studies there, especially those who aim to specialize in these disciplines."
+  },
+  {
+    "Name": "Goes Educational Consultancy Pvt. Ltd.",
+    "Url": "https:\/\/goes.edu.np\/",
+    "Logo": "https:\/\/goes.edu.np\/wp-content\/uploads\/Untitled-design-5.png",
+    "Desc": "For 17 years, we've supported students from diverse backgrounds in achieving their international education dreams. Our expertise provides a seamless transition, offering comprehensive guidance and support for studying abroad."
+  },
+  {
+    "Name": "UNITED KNOWLEDGE STUDY ABROAD PVT. LTD",
+    "Url": "https:\/\/www.signupinternational.com\/",
+    "Logo": "https:\/\/www.signupinternational.com\/wp-content\/uploads\/2022\/11\/Signup_logo_page-0001-removebg-preview.png",
+    "Desc": "Signup International is an education consultancy specializing in global education services. They assist students in pursuing education in popular destinations like Australia, UK, Philippines, Kazakhstan, Bangladesh, New Zealand, USA, Egypt, and Nepal. Their expertise lies in offering professional guidance for overseas education."
+  },
+  {
+    "Name": "International School of Travel and Learning",
+    "Url": "https:\/\/www.sit.edu\/",
+    "Logo": "",
+    "Desc": "Signup International is a global education consultancy that offers educational services for students looking to study in select, preferred countries. These include Australia, UK, Philippines, Kazakhstan, Bangladesh, New Zealand, the US, Egypt, and Nepal. They provide expert guidance and assistance for overseas education opportunities."
+  },
+  {
+    "Name": "IMAGE INSTITUTE PVT. LTD.",
+    "Url": "https:\/\/www.image.edu.in\/",
+    "Logo": "images\/favicon.ico",
+    "Desc": "Image Creative Education in Tamil Nadu is highly praised for its excellent faculties and teaching methods. The reviewer expresses gratitude and pride for their education received at the Salem branch, attributing their personal success to the institute."
+  },
+  {
+    "Name": "Motif Education Abroad Pvt.Ltd",
+    "Url": "https:\/\/motif.com.np\/",
+    "Logo": "https:\/\/motif.com.np\/wp-content\/uploads\/2024\/11\/cropped-motif-logo-pnggg.png",
+    "Desc": "Since 2007, Motif Education Abroad has been a reliable partner, offering professional guidance and assistance to students aspiring to study abroad. They excel in delivering expert advice and comprehensive support catered to the unique needs of every student."
+  },
+  {
+    "Name": "Educable Consultancy",
+    "Url": "https:\/\/educableconsultancy.com\/",
+    "Logo": "https:\/\/educableconsultancy.com\/wp-content\/uploads\/2025\/01\/cropped-logo.png",
+    "Desc": "As a seasoned educational specialist, Merit has excelled in understanding students' educational and career aspirations for seven years. Our professional team's commitment to quality helps drive a substantial student turnout. We are dedicated to assisting students in achieving their dreams."
+  },
+  {
+    "Name": "Auspark Education Network Pvt Ltd",
+    "Url": "https:\/\/auspark.edu.np\/",
+    "Logo": "http:\/\/auspark.edu.np\/wp-content\/uploads\/2019\/06\/logo.gif",
+    "Desc": "Aiming to be a leader in the education sector, we plan to expand our services via new branches in major cities, franchise offices in Nepal, and representation in various countries, including student destinations like Australia. Our continued upgrades will enhance our educational and career programs to meet student expectations."
+  },
+  {
+    "Name": "Fortune Educational Consultancy",
+    "Url": "https:\/\/fortunestudy.com\/about\/",
+    "Logo": "https:\/\/fortunestudy.com\/wp-content\/uploads\/2025\/10\/logo-removebg-preview.png",
+    "Desc": "The client praised the consultancy for its exceptional service, guiding them from the initial stages like university selection to handling visa procedures for studying in Australia. The team's constant assistance, encouragement, and clear instructions ensured the client never felt confused throughout the process. Their successful relocation was credited to the consultancy's dedication."
+  },
+  {
+    "Name": "Valley International Institute of Study Abroad Pvt.Ltd.",
+    "Url": "https:\/\/tyrocity.com\/consultancies\/valley-international-institute-of-study-abroad-pvt-ltd-4lai",
+    "Logo": "https:\/\/tyrocity.com\/uploads\/logos\/resized_logo_F1DucImSotanRkJf1FeO.png",
+    "Desc": "Our team of bilingual professionals excels in educational consultancy, offering services including IELTS preparation and assessment, institution suitability research, and appropriate visa acquisition. We assist clients to match their needs and qualifications with appropriate academic opportunities, ensuring a smooth transition right through to departure."
+  },
+  {
+    "Name": "Third Eye Education and Learning Center Pvt. Ltd",
+    "Url": "https:\/\/thirdeyeeducation.com\/in\/home\/",
+    "Logo": "https:\/\/thirdeyeeducation.com\/in\/wp-content\/uploads\/2023\/05\/TEE_Logo.jpg",
+    "Desc": "Join Third Eye Education Pvt. Ltd.'s esteemed network, offering high-quality computer education. Their effective franchise model, reputable brand, and ongoing support ensure your success in running a profitable business in your city."
+  },
+  {
+    "Name": "Life Track International Educational Consultancy",
+    "Url": "https:\/\/www.lifelicenseconsultants.com\/Categories_abroad",
+    "Logo": "images\/Life-License-logo.png",
+    "Desc": "Established in 2014, Life License Consultants is a leading Overseas Educational Consultant based in Hyderabad, providing guidance and counselling to students. They expertly handle Visa Processing for leading global Education Hubs including UK, Canada, Australia, New Zealand, USA, and Europe."
+  },
+  {
+    "Name": "VIVO EDUCATION Pvt.Ltd.",
+    "Url": "https:\/\/vivo.edu.np\/",
+    "Logo": "\/user\/assets\/img\/logo\/vivo.png ",
+    "Desc": "Vivo Education is a renowned institution offering comprehensive education and migration counseling for global studies. We provide holistic services, helping students with selection processes. Our expert team delivers credible and authentic advice, simplifying the journey for students pursuing education around the globe."
+  },
+  {
+    "Name": "Oxon Institute and Consultancy Pvt. Ltd.",
+    "Url": "https:\/\/houjin.jp\/c\/3700150100492",
+    "Logo": "https:\/\/d1x2geu5caq1vx.cloudfront.net\/assets\/logo-f0de6b0d768dabe86c6d4e06e8055895a8677b83c43d5e23e2190d0615cf5190.svg",
+    "Desc": "There is no negative information or black company data available about OXON INSTITUTE & CONSULTANCY PVT.LTD. This suggests that the company maintains a reputable standing in the business community, adhering to ethical standards and fair business practices."
+  },
+  {
+    "Name": "Success Educational Consultancy Pvt. Ltd.",
+    "Url": "https:\/\/sejs.com.np\/",
+    "Logo": "http:\/\/sejs.com.np\/wp-content\/uploads\/2020\/01\/sjes-logo-bar.jpg",
+    "Desc": "SEJS, founded by counseling professionals with 15 years experience in the education field, specializes in career counseling and job solutions. We provide continuous guidance and support for students from recruitment to course completion, maintaining regular coordination with institution authorities. Our comprehensive approach ensures a seamless educational journey."
+  },
+  {
+    "Name": "Ashford International PVt. LTD",
+    "Url": "https:\/\/ashford.com.np\/home\/",
+    "Logo": "",
+    "Desc": "SEJS, founded by experienced counsellors, offers robust career guidance services. Backed by personal exposure to top universities, SEJS provides uninterrupted support to students from recruitment through course completion, liaising regularly with institution authorities. It serves as a consistent guardian throughout the study period."
+  },
+  {
+    "Name": "Professional Visa And Education Services Pvt.Ltd Ltd",
+    "Url": "https:\/\/provisa.com.np\/contact",
+    "Logo": "",
+    "Desc": "SEJS, founded by seasoned career counseling professionals, offers comprehensive educational consultancy and job solutions. With a firm foundation in the education sector and direct exposure to top universities and facilities, SEJS provides continuous student support, coordinating with institutional authorities for the full course duration to ensure optimal student success."
+  }
 ]
