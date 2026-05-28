@@ -257,6 +257,9 @@ def core(query,i):
         print("Chat GPT response ++++++---/-*-*--++*-+*/-+//-+- ********************")
         print(GPT_DESC)
 
+        if AboutConsultancy == "":
+            GPT_DESC = ""
+
         # JSON DESC
 
         ConsultancyDesc.insert(i,GPT_DESC )
