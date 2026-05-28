@@ -17,7 +17,6 @@ df = pd.read_excel("C:\\Users\\hp\\Downloads\\consultancy data.xlsx")
 
 
 # importing columd data from excel file from downloads
-
 search_query = df["Name of Company"].tolist()
 
 path = "data.html"
@@ -194,7 +193,7 @@ def core(query,i):
 
         # JSON url
 
-        url.insert(i,webUrl if webUrl else "")
+        url.insert(i,webUrl)
 
         fetchAndSaveToFile(result,webUrl,path)
         soup = parseHTML(path)
@@ -202,25 +201,32 @@ def core(query,i):
             pass
         print("\n")
         print("WEBSITE IMAGE ********************")
-        img = soup.find_all("img", alt=re.compile(r"logo|home", re.I))
+        img = soup.find_all("img", alt=re.compile(r"logo|home|icon|brand", re.I)+soup.find_all("img", class_=re.compile(r"logo|home|icon|brand", re.I)))
 
 
         if img == []:
-            icon = soup.find_all("link",rel="icon")
-            print(icon[0]["href"])
-            ImgLOGO = icon[0]["href"]
+            icon = soup.find_all("link",rel="icon"+ soup.find_all("link", class_=re.compile(r"logo|home|icon|brand", re.I)))
+            if icon:
+                print(icon[0]["href"])
+                ImgLOGO = icon[0]["href"]
 
-            # JSON LOGO
+                # JSON LOGO
 
-            logo.insert(i,ImgLOGO if ImgLOGO else "")
+                logo.insert(i,ImgLOGO)
+            
+            else:
+                logo.insert(i,"")
 
         else:
-            print(img[0]["src"])
-            IconLOGO = img[0]["src"]
+            if img:
+                print(img[0]["src"])
+                IconLOGO = img[0]["src"]
 
-            # JSON LOGO
+                # JSON LOGO
 
-            logo.insert(i,IconLOGO if IconLOGO else "")
+                logo.insert(i,IconLOGO)
+            else:
+                logo.insert(i,"")
 
         description = soup.find_all("p", text = re.compile(r"consultancy|education", re.I))
 
@@ -240,7 +246,7 @@ def core(query,i):
 
         # JSON DESC
 
-        ConsultancyDesc.insert(i,GPT_DESC)
+        ConsultancyDesc.insert(i,GPT_DESC )
 
         print("\n")
         print("Ending of DESCRIPTION ********************")
@@ -266,8 +272,8 @@ def core(query,i):
 
    
 
-for i in range(len(search_query)):
-    core(search_query[i],i)
+for i, query in enumerate(search_query):
+    core(query, i)
 
         
 
