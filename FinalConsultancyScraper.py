@@ -201,11 +201,15 @@ def core(query,i):
             pass
         print("\n")
         print("WEBSITE IMAGE ********************")
-        img = soup.find_all("img", alt=re.compile(r"logo|home|icon|brand", re.I)+soup.find_all("img", class_=re.compile(r"logo|home|icon|brand", re.I)))
+        img = soup.find_all("img", alt=re.compile(r"logo|home|icon|brand", re.I)) \     
+          + soup.find_all("img", class_=re.compile(r"logo|home|icon|brand", re.I))
+
 
 
         if img == []:
-            icon = soup.find_all("link",rel="icon"+ soup.find_all("link", class_=re.compile(r"logo|home|icon|brand", re.I)))
+            icon = soup.find_all("link", rel="icon") \
+                + soup.find_all("link", class_=re.compile(r"logo|home|icon|brand", re.I))
+
             if icon:
                 print(icon[0]["href"])
                 ImgLOGO = icon[0]["href"]
