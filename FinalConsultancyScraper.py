@@ -225,7 +225,7 @@ def core(query,i):
 
                 # JSON LOGO
 
-                logo.insert(i,ImgLOGO)
+                logo.insert(i,ImgLOGO if ImgLOGO else "")
             
             else:
                 logo.insert(i,"")
@@ -237,7 +237,7 @@ def core(query,i):
 
                 # JSON LOGO
 
-                logo.insert(i,IconLOGO)
+                logo.insert(i,IconLOGO if IconLOGO else "")
             else:
                 logo.insert(i,"")
 
@@ -246,30 +246,42 @@ def core(query,i):
         print("\n")
         print("WEBSITE DESCRIPTION ********************")
 
+
+        print("\n")
+        print("][*/[]*[[]/[*]]] This is the description block []*[/][*]/[*]/")
+        print(description)
+
         for desc in description:
             AboutConsultancy = desc.get_text()
 
+        print("\n")
+        print("#$#$#$#$#$ Processed Description $#$#$#$#$#$#$")
         print(AboutConsultancy)
+
+        
 
         GPT_DESC = chat_with_gpt(AboutConsultancy + " Summarize the description into 50 words make it clear and professional")
 
         print("\n")
-        print("Chat GPT response ++++++---/-*-*--++*-+*/-+//-+- ********************")
+        print("************ ++++++---/-*-* Chat GPT response--++*-+*/-+//-+- ********************")
         print(GPT_DESC)
 
-        if AboutConsultancy == "":
+        if description == []:
+            AboutConsultancy = ""
             GPT_DESC = ""
+
+
 
         # JSON DESC
 
         ConsultancyDesc.insert(i,GPT_DESC )
 
+        description = []
+
         print("\n")
         print("Ending of DESCRIPTION ********************")
 
 
-        if description == [] or (img == [] and icon == []):
-            core(query)
 
         # JSON Data
     except Exception as e:
