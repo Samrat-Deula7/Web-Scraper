@@ -1,200 +1,98 @@
 [
     {
         "Name":"Sky Education Consultancy PvtLtd..",
-        "Url":"https:\/\/skyeduc.in\/",
-        "Logo":"assets\/website\/images\/logo.png",
-        "Desc":"Sky Educational Consultancy Services, with over five years of experience, specializes in abroad MBBS consulting, boasting a wide network of partnerships with top MCI approved colleges in Russia and other countries. Renowned for its high-quality counseling services, it has successfully aided over 30 students in pursuing their medical education overseas."
+        "Url":"https:\/\/skyeducation.co.in\/",
+        "Logo":"\/favicon.png",
+        "Desc":""
     },
     {
         "Name":"Cambridge institute of Technology Pvt. Ltd.",
         "Url":"https:\/\/www.citranchi.ac.in\/",
         "Logo":"assets\/img\/homeabout.jpg",
-        "Desc":"Established in 2001, Cambridge Institute of Technology located in Tatisilwai, near Ranchi, India, operates under the Cambridge Trust of India. As a prominent engineering institute, it offers scientific and technical education. It is officially approved by the All India Council for Technical Education, affiliated with Ranchi University and the Jharkhand Government."
+        "Desc":"Cambridge Institute of Technology, established in 2001 in Tatisilwai, Jharkhand, is a premier centre for scientific and technical education, promoted by the Cambridge Trust of India. It operates under the approval of AICTE New Delhi and is affiliated to Ranchi University, Ranchi and the Government of Jharkhand."
     },
     {
         "Name":"Real Dreams Educational Consultancy Center Pvt. Ltd",
-        "Url":"https:\/\/www.realdreamsedu.com\/contact-us\/",
+        "Url":"https:\/\/www.realdreamsedu.com\/",
         "Logo":"https:\/\/www.realdreamsedu.com\/wp-content\/uploads\/2020\/06\/Real-Dreams-Educational-Consultancy-Logo-1-300x300.png",
-        "Desc":"Real Dreams Educational Consultancy, established in 2003, is a reputable consultancy, offering comprehensive educational guidance and services until 2026. We uphold client confidentiality and prioritize personalized solutions for academic success. All rights are reserved, acknowledging our professional and ethically driven practices. We are committed to empowering dreams through quality education."
+        "Desc":"Real Dreams Educational Consultancy, operational since 2003, is devoted to providing expert guidance and assistance for educational endeavors. With its client-focused approach and dedication to excellence, it holds a renowned position in the educational consulting field. All proprietary materials are strictly protected under copyright law from 2003 to 2026."
     },
     {
         "Name":"Ably Path Ways Pvt. Ltd.",
-        "Url":"https:\/\/www.pathway.com.np\/",
-        "Logo":"img\/headphones.svg",
-        "Desc":"Understanding population dynamics and heterogeneity assists in addressing social and environmental changes and identifying vulnerable groups. By predicting population dynamics, policymakers can plan for future scenarios and assess Sustainable Development Goals (SDG). We have developed a user-friendly website and app showcasing these results, aiding the Ministry of Health in policy, budget planning and logistic management."
+        "Url":"https:\/\/pathwaysdata.com\/",
+        "Logo":"",
+        "Desc":""
     },
     {
         "Name":"RADIANCE INTERNATIONAL EDUCATIONAL CONSULTANCY PVT.LTD",
-        "Url":"https:\/\/www.instagram.com\/radianceintledu8\/",
-        "Logo":"https:\/\/static.cdninstagram.com\/rsrc.php\/yr\/r\/rzWiSjZRxk5.webp",
-        "Desc":"Understanding population dynamics and heterogeneity offers critical insights into social and environmental changes, aiding the identification of vulnerable groups. Projections of these dynamics assist in scenario planning across multiple sectors. Our user-friendly app provides demographic data for strategic planning, resource allocation and policy development in the health sector."
+        "Url":"https:\/\/ecan.org.np\/member-detail\/radiance-international-educati\/",
+        "Logo":"\/static\/custom\/images\/logo.png",
+        "Desc":"The Educational Consultancy Association of Nepal (ECAN), established in 1997, provides comprehensive information and guidance for parents seeking overseas education for their children. ECAN regulates the activities of its member consultancies, promotes international education, is recognised by foreign education providers and supported by local educators."
     },
     {
         "Name":"Brainstorm abroad education and immigration consultants pvt ltd",
-        "Url":"https:\/\/www.brainstormeducation.com.au\/",
-        "Logo":"img\/logo.jpg",
-        "Desc":"Brainstorm Education and Migration, established in 2016, provides comprehensive educational and immigration services. They aim to empower individuals by offering guidance on global educational opportunities, and assistance in navigating migration processes. Committed to professionalism, they ensure reliable and efficient service."
+        "Url":"https:\/\/www.uniagents.com\/en\/consultants\/brainstorm-abroad-education-and-immigration-consultants-pvtltd.htm",
+        "Logo":"https:\/\/www.uniagents.com\/agent-logo-thumbs\/agent-default.jpg",
+        "Desc":""
     },
     {
         "Name":"California Educational Consultancy Pvt.Ltd",
         "Url":"https:\/\/jalsan.com.np\/member-detail\/california-educational-consult\/",
         "Logo":"\/static\/assets\/image\/branding-logo--jlsan-white.png",
-        "Desc":"Brainstorm Education and Migration, established in 2016, specializes in providing comprehensive educational and immigration services. The firm offers expert advice and support throughout the complex processes, ensuring clients secure positive outcomes in their educational pursuits and migration journey."
+        "Desc":""
     },
     {
         "Name":"Confer Foundation",
-        "Url":"https:\/\/conferfoundation.edu.np\/",
+        "Url":"https:\/\/www.conferfoundation.edu.np\/",
         "Logo":"https:\/\/conferfoundation.edu.np\/dashboard\/uploads\/site\/56e77-confer.png",
-        "Desc":"The Confer Foundation consultancy surpassed others in their counselling approach and treatment of students. Their team's efforts greatly facilitated my visa application process, garnering my full satisfaction and gratitude. Their professionalism and help is immeasurable."
+        "Desc":"The individual was highly impressed with Confer Foundation Consultancy's approach and treatment towards students. Their satisfaction led them to apply through this consultancy, which ultimately resulted in visa procurement, thanks to the diligent efforts of the staff there."
     },
     {
         "Name":"Cosmic International Education Consultancy Pvt.Ltd...",
-        "Url":"https:\/\/arrowintl.edu.np\/mock-test\/",
-        "Logo":"https:\/\/arrowintl.edu.np\/wp-content\/plugins\/under-construction-page\/themes\/images\/favicon.png",
-        "Desc":"The individual had a positive experience with Confer Foundation Consultancy, particularly appreciating their counselling approach and treatment towards students. Owing to the dedicated efforts of the Consultancy's staff, the individual successfully procured a visa. They are extremely grateful for the assistance received."
+        "Url":"http:\/\/cosmicwayedu.com\/",
+        "Logo":"https:\/\/cosmicwayedu.com\/wp-content\/uploads\/2018\/08\/logo-1.png",
+        "Desc":"Cosmic Way Education Foundation excels in assisting students aiming to study abroad. Their comprehensive service includes university selection guidance and document handling. The staff's exceptional versatility and enthusiasm greatly enhance the service, distinguishing them from other consultancies."
     },
     {
         "Name":"Map Education Consultancy Pvt Ltd",
         "Url":"https:\/\/www.studydekho.com\/institutes\/show\/right-direction-overseas-education-consultants-pvt-ltd\/2315",
-        "Logo":"https:\/\/arrowintl.edu.np\/wp-content\/plugins\/under-construction-page\/themes\/images\/favicon.png",
-        "Desc":"The client had a positive experience with Confer Foundation Consultancy due to their impressive student treatment and counselling methods. Their valuable help and dedicated efforts facilitated the client\u2019s successful visa acquisition process. The client expressed deep appreciation for the consultancy's role in their visa journey."
+        "Logo":"https:\/\/cosmicwayedu.com\/wp-content\/uploads\/2018\/08\/logo-1.png",
+        "Desc":"Cosmic Way Education Foundation is an excellent choice for students aspiring to study abroad. Guided selection of universities and detailed paperwork assistance are among their offer. Their comprehensive service coupled with a passionate staff sets them apart from other educational consultancies."
     },
     {
         "Name":"Divine international education and consultant service pvt Ltd",
         "Url":"https:\/\/dia.com.np\/",
         "Logo":"https:\/\/demo.dia.com.np\/wp-content\/uploads\/2023\/11\/solutions-3.png",
-        "Desc":"Divine International Academy is a premier educational consultancy offering comprehensive guidance and support to students. They are committed to helping students make well-informed decisions about their educational journey, providing expert assistance in all aspects of higher education planning."
+        "Desc":"Divine International Academy is a premier educational consultancy offering extensive aid and guidance to students. Its focus lies in proffering key academic supports, helping students navigate their educational journey."
     },
     {
         "Name":"Destination Education and Visa Services Private Limited",
-        "Url":"https:\/\/www.immilawglobal.com\/other-services\/visa-application-processing-service",
-        "Logo":"https:\/\/www.immilawglobal.com\/assets\/client\/img\/logo.svg",
-        "Desc":"Divine International Academy (DIA) is a premier educational consultancy, providing thorough support and guidance to students. DIA's expertise lies in facilitating comprehensive academic advice, ensuring students have the necessary tools and knowledge to achieve their educational goals."
+        "Url":"https:\/\/searchnepal.biz\/listing\/-\/-\/destination-education-and-visa-services\/",
+        "Logo":"http:\/\/searchnepal.biz\/wp-content\/uploads\/2025\/01\/onlinelogomaker-101421-2250-7441-2000-transparent1.png",
+        "Desc":"Destination Education and Visa Services, located in Kathmandu, Nepal, provides comprehensive educational consultancy and visa assistance. Their services facilitate international study experience by guiding clients through selecting suitable educational institutions, application processes, and securing visas, making overseas education accessible and manageable."
     },
     {
         "Name":"Cambian Education and Research Center",
         "Url":"https:\/\/ecan.org.np\/member-detail\/cambian-education-and-research\/",
         "Logo":"\/static\/custom\/images\/logo.png",
-        "Desc":"The Educational Consultancy Association of Nepal (ECAN) is a government-registered body providing comprehensive guidance for overseas studies. Established in 1997, it serves as a central authority for all educational consultancies in Nepal, maintaining the country's international education environment, and is recognized by national educationalists and foreign education providers."
+        "Desc":"The Educational Consultancy Association of Nepal (ECAN), registered in 1997, provides information and guidance to parents considering overseas education for their children. ECAN, endorsed by educationalists and internationally recognized, is the authoritative body that regulates and monitors its member consultancies, maintaining Nepal's environment for international education."
     },
     {
         "Name":"Shubhangi Educational Consultancy Pvt. Ltd.",
-        "Url":"https:\/\/shubhangieducationalconsultancy.business.site\/",
-        "Logo":"",
-        "Desc":"The Educational Consultancy Association of Nepal (ECAN) is a professional body established in 1997 to provide information and guidance to parents seeking overseas education for their children. Recognized by local and international educators, ECAN monitors member consultancies and promotes a conducive environment for international education in Nepal."
+        "Url":"https:\/\/shubhangi.edu.np\/",
+        "Logo":"https:\/\/shubhangi.edu.np\/wp-content\/uploads\/2020\/10\/logo.png",
+        "Desc":"Shubhangi Educational Consultancy Pvt. Ltd is a leading service in 2023, offering advanced educational guidance and support. We provide professional advisory services for academic development. Our experienced team ensures high-quality, focused assistance for students, facilitating their overall educational progression. Copyright 2023, all rights reserved."
     },
     {
         "Name":"Uniglobal International Educational Foundation",
         "Url":"https:\/\/uniglobal.edu.np\/",
         "Logo":"https:\/\/uniglobal.edu.np\/wp-content\/uploads\/2023\/05\/uniglobal_logo_n.png",
-        "Desc":"Uniglobal Int'l Educational Foundation Pvt. Ltd. 2018 is a professional entity dedicated to providing comprehensive education services. With a commitment to excellence and innovation, they offer transformative educational programs, fostering intellectual growth and shaping future global leaders. They strive to empower students with knowledge and skills for continued success."
+        "Desc":"Uniglobal Int'l Educational Foundation Pvt. Ltd. is a recognized educational institution. Enriched with an experienced and skilled faculty, they strive to provide high-quality education through sophisticated teaching methods. Their mission is to develop versatile individuals who can adapt and contribute to the ever-changing, globalized world."
     },
     {
         "Name":"E Global Education Foundation Pvt. Ltd.",
-        "Url":"https:\/\/globaledu.net.in\/",
-        "Logo":"https:\/\/globaleducation.s3.ap-south-1.amazonaws.com\/globaledu\/globaledu-white.png",
-        "Desc":"Global Education, an ISO-certified consultancy firm, offers high-quality consultancy services and skill development programs for educational institutes. Their dedication to excellence and development make them a trustworthy partner in the field of education."
-    },
-    {
-        "Name":"Grisha Educational Consultancy Pvt.Ltd",
-        "Url":"https:\/\/cims.moest.gov.np\/",
-        "Logo":"https:\/\/noc.moest.gov.np\/img\/logo.31437cf9.png",
-        "Desc":"The Ministry of Education and Sports is a government department responsible for the management and improvement of national education and sports policies. It oversees curriculum development, teacher training, educational infrastructure, and the promotion and development of sports. The goal is to foster knowledge, skills, and healthy lifestyle through education and sports."
-    },
-    {
-        "Name":"Himalayan Education and Counselling Services",
-        "Url":"https:\/\/himalayanlawyers.com\/",
-        "Logo":"https:\/\/himalayanlawyers.com\/wp-content\/uploads\/2022\/04\/cropped-hl-322x107.png",
-        "Desc":"NGOs and INGOs are nonprofit, autonomous entities aimed at addressing socio-cultural, educational, and political issues at community and international levels. Their main goal is not monetary but to effect positive change in societal sectors they operate within."
-    },
-    {
-        "Name":"Kala International Consultancy",
-        "Url":"https:\/\/www.instagram.com\/kala_international_consultancy\/",
-        "Logo":"https:\/\/static.cdninstagram.com\/rsrc.php\/yr\/r\/rzWiSjZRxk5.webp",
-        "Desc":"NGOs and INGOs are independent, non-profit entities focused on addressing socio-cultural, educational, and political challenges locally or internationally. Their missions are deeply rooted in community service and international cooperation, moving beyond financial gain to drive social change."
-    },
-    {
-        "Name":"Apply International Education Consultancy",
-        "Url":"https:\/\/www.consultancynepal.com\/apply-international-education-consultancy-pvt-ltd",
-        "Logo":"https:\/\/www.consultancynepal.com\/assets\/images\/logo-2.png",
-        "Desc":"Apply International Education Consultancy provides scholarships for top-performing students to study in European nations. Alongside studying, these students gain a work permit, allowing part-time employment up to 20-30 hours per week, and full-time employment during vacations. Apply ensures a comprehensive educational and work experience abroad."
-    },
-    {
-        "Name":"International icon Educational Consultancy",
-        "Url":"https:\/\/myiconedu.com\/",
-        "Logo":"https:\/\/myiconedu.com\/wp-content\/uploads\/2025\/11\/cropped-Logo-Icon.jpeg",
-        "Desc":"ICON Education & Consultant, founded in 2026, offers professional educational services and consultancy. Through their comprehensive solutions and expert advice, they aid in enhancing the learning experiences of their clients. They hold full rights to their proprietary content and services. Commitment to their clients is their top priority."
-    },
-    {
-        "Name":"SMT GLOBAL PVT. LTD.",
-        "Url":"https:\/\/smtpl.com\/",
-        "Logo":"\/themes\/custom\/smtpl\/logo.png",
-        "Desc":"ICON Education & Consultant is a top-tier, professional educational service, providing high-quality consulting assistance. With a focus on educational innovation and individual growth, it delivers targeted solutions for enhancing learning experiences. The firm's offerings are confidential, ethical, and customer-oriented. All services and content are proprietary and copyrighted, reserved to ICON Education & Consultant, 2026."
-    },
-    {
-        "Name":"Smart Study Center",
-        "Url":"https:\/\/www.smartstudycenter.com\/",
-        "Logo":"\/_next\/image?url=%2Flogo.png&w=256&q=100",
-        "Desc":"A structured learning journey refers to a meticulously designed educational program aimed at achieving specific learning objectives and skills. This strategic approach ensures a seamless, purpose-driven learning experience and focuses on the development of professional competencies."
-    },
-    {
-        "Name":"Nascent Education Foundation Pvt.Ltd",
-        "Url":"https:\/\/tyrocity.com\/consultancies\/nascent-education-foundation-38c3",
-        "Logo":"https:\/\/tyrocity.com\/uploads\/logos\/resized_logo_F1DucImSotanRkJf1FeO.png",
-        "Desc":"Nascent Education Foundation (NEF) aids students with information on scholarships, grants, and training opportunities. NEF promotes a harmonious relationship between students, colleges, and stakeholders for educational advancement. They execute this through various methods such as events, campaigns, social and commercial networks, and technology."
-    },
-    {
-        "Name":"Nagasaki Educational and Training Institute Pvt Ltd",
-        "Url":"https:\/\/staging-app.ecan.org.np\/member-detail\/nagasaki-educational-and-trai\/",
-        "Logo":"https:\/\/tyrocity.com\/uploads\/logos\/resized_logo_F1DucImSotanRkJf1FeO.png",
-        "Desc":"The Nascent Education Foundation (NEF) informs students about scholarships, grants and training opportunities. NEF promotes relationships between students, colleges and stakeholders to improve both national and international education sectors. It uses various methods, including events, campaigns, networks and technology to effectively execute its operations."
-    },
-    {
-        "Name":"Third Eye Educational Center P. Ltd",
-        "Url":"https:\/\/thirdeyeabroad.com\/",
-        "Logo":"https:\/\/thirdeyeabroad.com\/upload\/Contact\/Image_1667891710588svg.png",
-        "Desc":"Third Eye Education is a seasoned provider of quality educational services, with over a decade of experience aiding students pursuing further studies in Australia, New Zealand, UK, USA, and Canada. They also offer preparation classes for IELTS, PTE, GMAT, TOEFL, and SAT."
-    },
-    {
-        "Name":"Asian international Education & Migration Pvt.Ltd.",
-        "Url":"https:\/\/www.asian.terracecafe.com.np\/",
-        "Logo":"https:\/\/www.asian.terracecafe.com.np\/adminpanel\/uploads\/site\/526.jpg",
-        "Desc":"Asian Education provided vital support in selection of universities and courses, and guided appropriately. The process was swift with speedy acceptance and visa processing. Overall, the service provided was convenient and valuable, garnering gratitude from the user."
-    },
-    {
-        "Name":"Little Marimaid Education & Research Consultancy Pvt. Ltd.",
-        "Url":"https:\/\/www.educationagentsguide.com\/nepal\/little_marimaid_education_research_consultancy_lmec_global.htm",
-        "Logo":"..\/images\/261118025351-agency-logo-15874.png",
-        "Desc":"Asian Education provided comprehensive support in university and course selection followed by quick visa processing. Their guidance and prompt assistance resulted in a swift acceptance. This professional service ensured a smooth and efficient educational journey. Extremely grateful for Asian Education's excellent support system."
-    },
-    {
-        "Name":"SKYLINE EDUCATION CONSULTANCY PVT. LTD",
-        "Url":"https:\/\/skylineedu.com.np\/",
-        "Logo":"https:\/\/skylineedu.com.np\/wp-content\/uploads\/2019\/06\/cropped-companylogo2-2.png",
-        "Desc":"Skyline Education Consultants provide crucial services for students seeking to study abroad. They assist in choosing the right program, application procedures and other complex processes. With their expertise, they alleviate students' worries and ensure a smooth transition overseas."
-    },
-    {
-        "Name":"Minnano Wakaba International Education Pvt. Ltd.",
-        "Url":"https:\/\/minnanowakaba.com\/",
-        "Logo":"http:\/\/minnanowakaba.com\/wp-content\/uploads\/2019\/07\/college.jpg",
-        "Desc":"Minnano Wakaba International Education is a renowned institution dedicated to global learning. Their aim is to enhance cross-cultural understanding and foster diverse skills among students. They offer a robust curriculum geared towards enriching knowledge and broadening students' perspectives through comprehensive international exposure."
-    },
-    {
-        "Name":"Faith international Education Services Pvt Ltd.",
-        "Url":"https:\/\/faith.edu.np\/",
-        "Logo":"data:image\/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==",
-        "Desc":"Faith International Education is an education consultancy specializing in international education and student visa services. This dynamic firm offers its expertise to students aspiring to study abroad, providing comprehensive advice and support throughout the application and visa process."
-    },
-    {
-        "Name":"SHRINE EDUCATION SERVICE PVT. LTD.",
-        "Url":"https:\/\/tinpan.proteantech.in\/",
-        "Logo":"\/favicon.ico",
-        "Desc":"Faith International Education is an advanced education consultancy, specializing in overseas education and student visa services. Their dynamic approach offers customized solutions to cater to individual academic aspirations, effectively assisting students in their pursuit of global educational opportunities."
-    },
-    {
-        "Name":"opal consulting pvt. ltd.",
-        "Url":"https:\/\/opal.com.np\/",
-        "Logo":"https:\/\/opal.com.np\/site\/wp-content\/uploads\/2025\/10\/opal-logo-e1774596095950-300x94.jpg",
-        "Desc":"Opal Education is a premier institution offering high-quality education service, dedicated to promoting learning and fostering academic excellence. Boasting strong expertise, it ensures the brilliance of its teaching methods and comprehensive courses. All content and services are protected with full reserve rights under Opal Education copyright 2025."
+        "Url":"https:\/\/aceglobal.com.np\/",
+        "Logo":"https:\/\/aceglobal.com.np\/wp-content\/themes\/aceglobal\/assets\/img\/logo.png",
+        "Desc":"Ace Global Education staff demonstrate high professionalism and a familial atmosphere, creating an environment of care, support, and love. Experiencing an enjoyable time there, the individual acknowledges their contribution towards achieving future success, expressing gratitude for their tenure."
     }
 ]
