@@ -216,7 +216,7 @@ def core(query,i):
                 pass
         print("\n")
         print("WEBSITE IMAGE ********************")
-        img = soup.find_all("img", alt=re.compile(r"logo|home|icon|brand", re.I)) or soup.find_all("img", class_=re.compile(r"logo|home|icon|brand", re.I)) or soup.find_all("img",src=re.compile(r"logo",re.I))
+        img = soup.find_all("img", alt=re.compile(r"logo|home|brand", re.I)) or soup.find_all("img", class_=re.compile(r"logo|home|icon|brand", re.I)) or soup.find_all("img",src=re.compile(r"logo",re.I))
 
 
 
