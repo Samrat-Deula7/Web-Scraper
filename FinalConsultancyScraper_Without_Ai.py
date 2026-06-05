@@ -50,7 +50,7 @@ def genWebUrlLinkANDFilteredSiteURL(results):
     FBURL = ""
     HrefArr = []
     FilteredHref = []
-    
+
 
     for i in range(8):
         HrefArr.insert(i,results[i]["href"])
@@ -137,7 +137,7 @@ def genWebUrlLinkANDFilteredSiteURL(results):
 
     return webURLName
 
-    
+
 
 
 def serchQuery(queryName):
@@ -147,7 +147,7 @@ def serchQuery(queryName):
     safesearch='off',
     timeLimit='7d',
     max_results=50
-)
+    )
 
 
 def fetchAndSaveToFile(results,url,path):
@@ -155,7 +155,7 @@ def fetchAndSaveToFile(results,url,path):
         response = requests.get(url, timeout=60)
         with open(path,"w", encoding="utf-8") as f:
             f.write(response.text)
-        return "Done"
+            return "Done"
     except requests.exceptions.RequestException as e:
         print(f"Couldn't scrape {url}: {e}")
         return None
@@ -179,10 +179,10 @@ url = []
 
 
 data = {
-"Name":name,
-"Url":url,
-"Logo":logo,
-"Desc":ConsultancyDesc
+    "Name":name,
+    "Url":url,
+    "Logo":logo,
+    "Desc":ConsultancyDesc
 }
 AboutConsultancy = ""
 GPT_DESC = ""
@@ -190,11 +190,11 @@ GPT_DESC = ""
 def core(query,i):
     try:
         global name, logo, ConsultancyDesc, desc, url, data, AboutConsultancy, GPT_DESC,soup
-        
-        
 
-        
-        
+
+
+
+
         result = serchQuery(query)
 
         # JSON name
@@ -230,7 +230,7 @@ def core(query,i):
                 # JSON LOGO
 
                 logo.insert(i,ImgLOGO if ImgLOGO else "")
-            
+
             else:
                 logo.insert(i,"")
 
@@ -262,7 +262,7 @@ def core(query,i):
         print("#$#$#$#$#$ Processed Description $#$#$#$#$#$#$")
         print(AboutConsultancy)
 
-        
+
 
         # GPT_DESC = chat_with_gpt(AboutConsultancy + " Summarize the description into 50 words make it clear and professional")
 
@@ -287,11 +287,11 @@ def core(query,i):
 
 
 
-        # JSON Data
+            # JSON Data
     except Exception as e:
         print("Couldn't scrape Data",e)
         pass
-        
+
     finally:
         print("\n")
         print("############### This is the data to export to json ###############")
@@ -315,20 +315,19 @@ def core(query,i):
 
         df = pd.DataFrame(data)
 
-       
+
 
         # Export to JSON
         df.to_json("resultdataWithoutAi.json", orient="records", indent=4)
-        
+
 
 
 for i, query in enumerate(search_query):
     core(query, i)
 
-        
 
-    
-    
+
+
 
 
 
