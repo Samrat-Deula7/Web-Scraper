@@ -178,21 +178,14 @@ url = []
 
 
 
-data = {
-    "Name":name,
-    "Url":url,
-    "Logo":logo,
-    "Desc":ConsultancyDesc
-}
+
+
 AboutConsultancy = ""
 GPT_DESC = ""
 
 def core(query,i):
     try:
         global name, logo, ConsultancyDesc, desc, url, data, AboutConsultancy, GPT_DESC,soup
-
-
-
 
 
         result = serchQuery(query)
@@ -216,12 +209,12 @@ def core(query,i):
                 pass
         print("\n")
         print("WEBSITE IMAGE ********************")
-        img = soup.find_all("img", alt=re.compile(r"logo|home|brand", re.I)) or soup.find_all("img", class_=re.compile(r"logo|home|icon|brand", re.I)) or soup.find_all("img",src=re.compile(r"logo",re.I))
+        img = soup.find_all("img", alt=re.compile(r"logo|home|brand", re.I)) or soup.find_all("img", class_=re.compile(r"logo|home|brand", re.I)) or soup.find_all("img",src=re.compile(r"logo",re.I))
 
 
 
         if img == []:
-            icon = soup.find_all("link", rel="icon") or soup.find_all("link", class_=re.compile(r"logo|home|icon|brand", re.I))
+            icon = soup.find_all("link", rel="icon") or soup.find_all("link", class_=re.compile(r"logo|home|brand", re.I))
 
             if icon:
                 print(icon[0]["href"])
@@ -255,12 +248,12 @@ def core(query,i):
         print("][*/[]*[[]/[*]]] This is the description block []*[/][*]/[*]/")
         print(description)
 
-        for desc in description:
-            AboutConsultancy = desc.get_text()
+        # for desc in description:
+        #     AboutConsultancy += desc.get_text()
 
-        print("\n")
-        print("#$#$#$#$#$ Processed Description $#$#$#$#$#$#$")
-        print(AboutConsultancy)
+        # print("\n")
+        # print("#$#$#$#$#$ Processed Description $#$#$#$#$#$#$")
+        # print(AboutConsultancy)
 
 
 
@@ -270,60 +263,44 @@ def core(query,i):
         # print("************ ++++++---/-*-* Chat GPT response--++*-+*/-+//-+- ********************")
         # print(GPT_DESC)
 
-        if description == []:
-            AboutConsultancy = ""
+        # if description == []:
+        #     AboutConsultancy = ""
             # GPT_DESC = ""
 
 
 
-        # JSON DESC
+            # JSON DESC
 
-        ConsultancyDesc.insert(i,AboutConsultancy )
+        ConsultancyDesc.insert(i,str(description ))
 
-        description = []
+        # description = []
 
         print("\n")
         print("Ending of DESCRIPTION ********************")
 
+        print(name,logo,ConsultancyDesc,url)
+
+        return name, logo ,ConsultancyDesc , url
 
 
-            # JSON Data
+
+    # JSON Data
     except Exception as e:
         print("Couldn't scrape Data",e)
         pass
 
-    finally:
-        print("\n")
-        print("############### This is the data to export to json ###############")
-        print(data)
-
-        max_len = max(len(name),len(logo),len(ConsultancyDesc),len(url))
+nameToExport = []
+urlToExport = []
+logoToExport = []
+descToExport = []
 
 
-        if (max_len-len(name))>0:
-            name += [""]
-        if (max_len-len(logo))>0:
-            logo += [""]
-        if (max_len-len(ConsultancyDesc))>0:
-            ConsultancyDesc += [""]
-        if (max_len-len(url))>0:
-            url += [""]
-
-        print("\n")
-        print("################ This is all length ############################")
-        print(len(name),len(logo),len(ConsultancyDesc),len(url))
-
-        df = pd.DataFrame(data)
-
-
-
-        # Export to JSON
-        df.to_json("resultdataWithoutAi.json", orient="records", indent=4)
-
-
-
-for i, query in enumerate(search_query):
-    core(query, i)
+for i, query in enumerate(search_query[0:4]):
+    consul_name, consul_logo, consul_desc, consul_url = core(query, i)
+nameToExport = consul_name
+urlToExport = consul_url
+logoToExport = consul_logo
+descToExport = consul_desc
 
 
 
@@ -331,4 +308,38 @@ for i, query in enumerate(search_query):
 
 
 
+
+data = {
+    "Name":nameToExport,
+    "Url":urlToExport,
+    "Logo":logoToExport,
+    "Desc":descToExport
+}
+
+print("\n")
+print("############### This is the data to export to json ###############")
+print(data)
+
+max_len = max(len(name),len(logo),len(ConsultancyDesc),len(url))
+
+
+if (max_len-len(name))>0:
+    name += [""]
+if (max_len-len(logo))>0:
+    logo += [""]
+if (max_len-len(ConsultancyDesc))>0:
+    ConsultancyDesc += [""]
+if (max_len-len(url))>0:
+    url += [""]
+
+print("\n")
+print("################ This is all length ############################")
+print(len(name),len(logo),len(ConsultancyDesc),len(url))
+
+df = pd.DataFrame(data)
+
+
+
+# Export to JSON
+df.to_json("resultdataWithoutAi.json", orient="records", indent=4)
 
