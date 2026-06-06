@@ -50,7 +50,7 @@ def genWebUrlLinkANDFilteredSiteURL(results):
     FBURL = ""
     HrefArr = []
     FilteredHref = []
-
+    
 
     for i in range(8):
         HrefArr.insert(i,results[i]["href"])
@@ -137,7 +137,7 @@ def genWebUrlLinkANDFilteredSiteURL(results):
 
     return webURLName
 
-
+    
 
 
 def serchQuery(queryName):
@@ -147,7 +147,7 @@ def serchQuery(queryName):
     safesearch='off',
     timeLimit='7d',
     max_results=50
-    )
+)
 
 
 def fetchAndSaveToFile(results,url,path):
@@ -155,7 +155,7 @@ def fetchAndSaveToFile(results,url,path):
         response = requests.get(url, timeout=60)
         with open(path,"w", encoding="utf-8") as f:
             f.write(response.text)
-            return "Done"
+        return "Done"
     except requests.exceptions.RequestException as e:
         print(f"Couldn't scrape {url}: {e}")
         return None
@@ -175,171 +175,116 @@ logo = []
 ConsultancyDesc = []
 url = []
 
-
-
-
-
-
 AboutConsultancy = ""
 GPT_DESC = ""
 
-def core(query,i):
-    try:
-        global name, logo, ConsultancyDesc, desc, url, data, AboutConsultancy, GPT_DESC,soup
+def core():
+    for i, query in enumerate(search_query):
+        try:
+            global name, logo, desc, url, data, AboutConsultancy, GPT_DESC,soup   
+            result = serchQuery(query)
+
+            # JSON name
+
+            name.insert(i,query)
 
 
-        result = serchQuery(query)
+            webUrl = genWebUrlLinkANDFilteredSiteURL(result)
 
-        # JSON name
+            # JSON url
 
-        name.insert(i,query)
+            url.insert(i,webUrl)
 
+            isDone = fetchAndSaveToFile(result,webUrl,path)
 
-        webUrl = genWebUrlLinkANDFilteredSiteURL(result)
-
-        # JSON url
-
-        url.insert(i,webUrl)
-
-        isDone = fetchAndSaveToFile(result,webUrl,path)
-
-        if isDone == "Done":
-            soup = parseHTML(path)
-            with open(path,"w",encoding="utf-8") as f:
-                pass
-        print("\n")
-        print("WEBSITE IMAGE ********************")
-        img = soup.find_all("img", alt=re.compile(r"logo|home", re.I)) or soup.find_all("img", class_=re.compile(r"logo|home", re.I)) or soup.find_all("img",src=re.compile(r"logo",re.I))
+            if isDone == "Done":
+                soup = parseHTML(path)
+                with open(path,"w",encoding="utf-8") as f:
+                    pass
+            print("\n")
+            print("WEBSITE IMAGE ********************")
+            img = soup.find_all("img", alt=re.compile(r"logo|home", re.I)) or soup.find_all("img", class_=re.compile(r"logo|home", re.I)) or soup.find_all("img",src=re.compile(r"logo",re.I))
 
 
 
-        if img == []:
-            icon = soup.find_all("link", rel="icon") or soup.find_all("link", class_=re.compile(r"logo|home", re.I))
+            if img == []:
+                icon = soup.find_all("link", rel="icon") or soup.find_all("link", class_=re.compile(r"logo|home", re.I))
 
-            if icon:
-                print(icon[0]["href"])
-                ImgLOGO = icon[0]["href"]
+                if icon:
+                    print(icon[0]["href"])
+                    ImgLOGO = icon[0]["href"]
 
-                # JSON LOGO
+                    # JSON LOGO
 
-                logo.insert(i,ImgLOGO if ImgLOGO else "")
+                    logo.insert(i,ImgLOGO if ImgLOGO else "")
+                
+                else:
+                    logo.insert(i,"")
 
             else:
-                logo.insert(i,"")
+                if img:
+                    print(img[0]["src"])
+                    IconLOGO = img[0]["src"]
 
-        else:
-            if img:
-                print(img[0]["src"])
-                IconLOGO = img[0]["src"]
+                    # JSON LOGO
 
-                # JSON LOGO
+                    logo.insert(i,IconLOGO if IconLOGO else "")
+                else:
+                    logo.insert(i,"")
 
-                logo.insert(i,IconLOGO if IconLOGO else "")
-            else:
-                logo.insert(i,"")
+            description = soup.find_all("p", text = re.compile(r"consultancy|education", re.I))
 
-        description = soup.find_all("p", text = re.compile(r"consultancy|education", re.I)) or soup.find_all(class_=re.compile(r"detail|company|consultancy|education|about",re.I))
-
-        print("\n")
-        print("WEBSITE DESCRIPTION ********************")
+            print("\n")
+            print("WEBSITE DESCRIPTION ********************")
 
 
-        print("\n")
-        print("][*/[]*[[]/[*]]] This is the description block []*[/][*]/[*]/")
-        print(description)
+            print("\n")
+            print("][*/[]*[[]/[*]]] This is the description block []*[/][*]/[*]/")
+            print(description)
 
-        # for desc in description:
-        #     AboutConsultancy += desc.get_text()
-
-        # print("\n")
-        # print("#$#$#$#$#$ Processed Description $#$#$#$#$#$#$")
-        # print(AboutConsultancy)
-
-
-
-        # GPT_DESC = chat_with_gpt(AboutConsultancy + " Summarize the description into 50 words make it clear and professional")
-
-        # print("\n")
-        # print("************ ++++++---/-*-* Chat GPT response--++*-+*/-+//-+- ********************")
-        # print(GPT_DESC)
-
-        # if description == []:
-        #     AboutConsultancy = ""
-            # GPT_DESC = ""
-
-
-
+            if description:
             # JSON DESC
 
-        ConsultancyDesc.insert(i,str(description ))
-
-        # description = []
-
-        print("\n")
-        print("Ending of DESCRIPTION ********************")
-
-        print(name,logo,ConsultancyDesc,url)
-
-        return name, logo ,ConsultancyDesc , url
+                ConsultancyDesc.insert(i,str(description))
+            else:
+                ConsultancyDesc.insert(i,"")
 
 
+            print("\n")
+            print("Ending of DESCRIPTION ********************")
 
-    # JSON Data
-    except Exception as e:
-        print("Couldn't scrape Data",e)
-        pass
+            
 
-nameToExport = []
-urlToExport = []
-logoToExport = []
-descToExport = []
+            # JSON Data
+        except Exception as e:
+            print("Couldn't scrape Data",e)
+            pass
 
+    data = {
+        "Name":name,
+        "Url":url,
+        "Logo":logo,
+        "Desc":ConsultancyDesc
+    }
 
-for i, query in enumerate(search_query[0:2]):
-    consul_name, consul_logo, consul_desc, consul_url = core(query, i)
-nameToExport = consul_name
-urlToExport = consul_url
-logoToExport = consul_logo
-descToExport = consul_desc
+    print("\n")
+    print("############### This is the data to export to json ###############")
+    print(data)
 
+    df = pd.DataFrame(data)
 
+    # Export to JSON
+    df.to_json("HopeData.json", orient="records", indent=4)
+        
 
-
-
+core()
 
 
 
-data = {
-    "Name":nameToExport,
-    "Url":urlToExport,
-    "Logo":logoToExport,
-    "Desc":descToExport
-}
 
-print("\n")
-print("############### This is the data to export to json ###############")
-print(data)
-
-max_len = max(len(name),len(logo),len(ConsultancyDesc),len(url))
-
-
-if (max_len-len(name))>0:
-    name += [""]
-if (max_len-len(logo))>0:
-    logo += [""]
-if (max_len-len(ConsultancyDesc))>0:
-    ConsultancyDesc += [""]
-if (max_len-len(url))>0:
-    url += [""]
-
-print("\n")
-print("################ This is all length ############################")
-print(len(name),len(logo),len(ConsultancyDesc),len(url))
-
-df = pd.DataFrame(data)
+    
+    
 
 
 
-# Export to JSON
-df.to_json("resultdataWithoutAi.json", orient="records", indent=4)
 
